@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <package version="3.0" xmlns="http://www.idpf.org/2007/opf" unique-identifier="bookid" prefix="rendition: http://www.idpf.org/vocab/rendition/# ibooks: http://vocabulary.itunes.apple.com/rdf/ibooks/vocabulary-extensions-1.0/">
 	<metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
-		<meta name="generator" content="Adobe InDesign 10.1" />
-		<meta property="ibooks:specified-fonts">true</meta>
-		<dc:title>NeHe-INDB-1-15</dc:title>
+		<meta name="generator" content="WebStorm/Dreamweaver/bash" />
+		<dc:title>NeHe-INDB-2-15</dc:title>
 		<dc:date>2016-02-12T20:21:44Z</dc:date>
 		<dc:language>en-US</dc:language>
 		<meta property="dcterms:modified">2016-02-12T20:21:44Z</meta>
