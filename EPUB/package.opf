@@ -14,38 +14,46 @@
 	</metadata>
 	<manifest>
 		<!--  images  -->
-  		<item id="readium_logo" href="images/readium_logo.png" media-type="image/png"/>
-  		<item id="epub_logo" href="images/epub_logo.jpeg" media-type="image/jpeg" />
   		<item id="webgl_logo" href="images/webgl.jpg" media-type="image/jpeg" />
- 		<item id="NeHe-2-15.png" href="image/NeHe-2-15.png" media-type="image/png" />
- 		
+ 		<item id="NeHe-2-15.png" href="images/NeHe-2-15.png" media-type="image/png" />
+ 		<item id="checkerboard" href="images/checkerboard.jpg" media-type="image/jpeg" />
+
   		<!-- css -->
-		<item id="NeHe" href="css/NEHE.css" media-type="text/css"/>
- 		
+		<item id="NeHe" href="css/NeHe.css" media-type="text/css"/>
+		<item id="NeHe-EPUB" href="css/NeHe-EPUB.css" media-type="text/css"/>
+
  		<!-- scripts -->
  		<item id="detector" href="js/Detector.js" media-type="text/javascript"/>
  		<item id="threejs" href="js/three.js" media-type="text/javascript"/>
  		<item id="jquery" href="js/jquery-1.9.1.js" media-type="text/javascript"/>
- 		<item id="NEHE" href="js/NEHE.js" media-type="text/javascript"/>
   		<item id="OrbitControls" href="js/OrbitControls-Touch.js" media-type="text/javascript"/>
  		<item id="Scene" href="js/Scene.js" media-type="text/javascript"/>
- 		<item id="Stats" href="js/Stats.js" media-type="text/javascript"/>	
+ 		<item id="Stats" href="js/Stats.js" media-type="text/javascript"/>
+
  		<!-- fonts-js -->	
  		<item id="gentilis-bold" href="fonts/gentilis_bold.typeface.js" media-type="text/javascript"/>		
  		<item id="gentilis-regular" href="fonts/gentilis_regular.typeface.js" media-type="text/javascript"/>		
-		
+ 		<item id="helvetiker-bold-italic" href="fonts/helvetiker_bold_italic.typeface.js" media-type="text/javascript"/>
+ 		<item id="helvetiker-bold" href="fonts/helvetiker_bold.typeface.js" media-type="text/javascript"/>
+ 		<item id="helvetiker-italic" href="fonts/helvetiker_italic.typeface.js" media-type="text/javascript"/>
+ 		<item id="helvetiker-regular" href="fonts/helvetiker_regular.typeface.js" media-type="text/javascript"/>
+ 		<item id="LICENSE" href="fonts/LICENSE" media-type="application/plain"/>
+
 		<!-- front matter -->
 		<item id="coverpage" href="frontmatter/cover.xhtml" media-type="application/xhtml+xml" />
-		<item id="titlepage" href="frontmatter/toc.xhtml" media-type="application/xhtml+xml" />
+		<item id="toc" href="frontmatter/toc.xhtml" media-type="application/xhtml+xml" properties="nav"/>
+		<item id="preface" href="frontmatter/preface.xhtml" media-type="application/xhtml+xml" />
+		<item id="intro" href="frontmatter/intro.xhtml" media-type="application/xhtml+xml" />
 
 		<!-- the tutorials -->
 		<item id="lesson02" href="tutorial02/tutorial02.xhtml" media-type="application/xhtml+xml" />
-		<item id="lesson02-gl" href="tutorial02/tutorial02webgl.xhtml" media-type="application/xhtml+xml" />
+		<item id="lesson02-gl" href="tutorial02/tutorial02webgl.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
 	</manifest>
 	<spine>
 		<itemref idref="coverpage" />
-		<itemref idref="titlepage" />
+		<itemref idref="toc" />
 		<itemref idref="preface" />
+		<itemref idref="intro" />
 		<itemref idref="lesson02" />
 		<itemref idref="lesson02-gl" />
 	</spine>
