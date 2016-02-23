@@ -7,7 +7,7 @@
 
 		<!-- The following meta line optimizes the site for mobile devices. It sets the viewport size
 		to the screen size, so it will be displayed maximized, but unscaled. -->
-		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1"/>
+        <meta name="viewport" content="width=768,height=1024" />
 		<style type="text/css">
 			body {
 				/* Set the background color of the HTML page to black */
@@ -32,6 +32,8 @@
 		<script>
 			// Global scene object
 			var scene;
+            var canvasHeight = 1024;
+            var canvasWidth = 768;
 
 			// Global camera object
 			var camera;
@@ -66,14 +68,10 @@
 				renderer.setClearColor(0x000000, 1);
 
 				// Get the size of the inner window (content area) to create a full size renderer
-				canvasWidth = window.innerWidth;
-				canvasHeight = window.innerHeight;
-                canvasHeight = window.outerHeight;
-                canvasWidth = canvasHeight * 0.77;   //ratio height to width for a portrait page - ENglish
-
-
-                console.log(" window: " + canvasWidth + "," + canvasHeight );
-                getPageHeight();
+                // we can't use this for the EPUB as the values aren't available within an EPUB renderer
+				//canvasWidth = window.innerWidth;
+				//canvasHeight = window.innerHeight;
+                //console.log(" window: " + canvasWidth + "," + canvasHeight );
 
                 // Set the renderers size to the content areas size
 				renderer.setSize(canvasWidth, canvasHeight);
@@ -169,18 +167,6 @@
 				scene.add(squareMesh);
 			}
 
-            function getPageHeight() {
-                var pageHeight = document.getElementById('page').height;
-                var pageWidth = document.getElementById('page').width;
-
-                console.log("page: " + pageWidth + ", " + pageHeight);
-
-                var body = document.body,
-                        html = document.documentElement;
-
-                var height = Math.max( body.scrollHeight, body.offsetHeight,
-                        html.clientHeight, html.scrollHeight, html.offsetHeight );
-            }
 
 			/**
 			 * Render the scene. Map the 3D world to the 2D screen.
