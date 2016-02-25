@@ -2,18 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f5511974-615e-45db-a977-796aafaa665e" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/Sandbox-NeHe-EPUB.iml" afterPath="$PROJECT_DIR$/.idea/NeHe-EPUB-2-15.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EPUB/images/NeHe-2-15.png" afterPath="$PROJECT_DIR$/EPUB/images/NeHe-2-15.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EPUB/css/NeHe-EPUB.css" afterPath="$PROJECT_DIR$/EPUB/css/NeHe-EPUB.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EPUB/frontmatter/intro.xhtml" afterPath="$PROJECT_DIR$/EPUB/frontmatter/intro.xhtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EPUB/frontmatter/preface.xhtml" afterPath="$PROJECT_DIR$/EPUB/frontmatter/preface.xhtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EPUB/frontmatter/toc.xhtml" afterPath="$PROJECT_DIR$/EPUB/frontmatter/toc.xhtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EPUB/package.opf" afterPath="$PROJECT_DIR$/EPUB/package.opf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EPUB/tutorial02/tutorial02.xhtml" afterPath="$PROJECT_DIR$/EPUB/tutorial02/tutorial02.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EPUB/tutorial02/tutorial02webgl.xhtml" afterPath="$PROJECT_DIR$/EPUB/tutorial02/tutorial02webgl.xhtml" />
     </list>
     <ignored path="Sandbox-NeHe-EPUB.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,11 +27,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="package.opf" pinned="false" current-in-tab="true">
+      <file leaf-file-name="package.opf" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/EPUB/package.opf">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.17123288">
-              <caret line="10" column="60" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="62" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="54" column="97" selection-start-line="54" selection-start-column="97" selection-end-line="54" selection-end-column="97" />
               <folding />
             </state>
           </provider>
@@ -57,8 +50,8 @@
       <file leaf-file-name="tutorial02.xhtml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/EPUB/tutorial02/tutorial02.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.608696">
-              <caret line="72" column="83" selection-start-line="72" selection-start-column="83" selection-end-line="72" selection-end-column="83" />
+            <state vertical-scroll-proportion="-2.6086957">
+              <caret line="6" column="41" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -78,7 +71,7 @@
         <entry file="file://$PROJECT_DIR$/EPUB/frontmatter/preface.xhtml">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-9.130435">
-              <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+              <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -87,8 +80,8 @@
       <file leaf-file-name="toc.xhtml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/EPUB/frontmatter/toc.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.0">
-              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+            <state vertical-scroll-proportion="-13.043478">
+              <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -107,8 +100,18 @@
       <file leaf-file-name="NeHe-EPUB.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/EPUB/css/NeHe-EPUB.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.391304">
-              <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+            <state vertical-scroll-proportion="-14.347826">
+              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="colophon.xhtml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/EPUB/frontmatter/colophon.xhtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.3516999">
+              <caret line="20" column="3" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -126,13 +129,14 @@
         <option value="$PROJECT_DIR$/EPUB/tutorial02/chapter_002.xhtml" />
         <option value="$PROJECT_DIR$/EPUB/tutorial02/tutorial02-1.xhtml" />
         <option value="$PROJECT_DIR$/EPUB/tutorial02/tutorial02-p.xhtml" />
-        <option value="$PROJECT_DIR$/EPUB/css/NeHe-EPUB.css" />
         <option value="$PROJECT_DIR$/EPUB/frontmatter/intro.xhtml" />
         <option value="$PROJECT_DIR$/EPUB/frontmatter/preface.xhtml" />
-        <option value="$PROJECT_DIR$/EPUB/frontmatter/toc.xhtml" />
-        <option value="$PROJECT_DIR$/EPUB/tutorial02/tutorial02.xhtml" />
         <option value="$PROJECT_DIR$/EPUB/tutorial02/tutorial02webgl.xhtml" />
+        <option value="$PROJECT_DIR$/EPUB/tutorial02/tutorial02.xhtml" />
+        <option value="$PROJECT_DIR$/EPUB/css/NeHe-EPUB.css" />
         <option value="$PROJECT_DIR$/EPUB/package.opf" />
+        <option value="$PROJECT_DIR$/EPUB/frontmatter/toc.xhtml" />
+        <option value="$PROJECT_DIR$/EPUB/frontmatter/colophon.xhtml" />
       </list>
     </option>
   </component>
@@ -144,7 +148,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="40" />
     <option name="y" value="23" />
-    <option name="width" value="1369" />
+    <option name="width" value="1765" />
     <option name="height" value="1417" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -236,6 +240,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="tutorial01" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NeHe-EPUB-2-15" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sandbox-NeHe-EPUB" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EPUB" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="images" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -291,8 +313,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/EPUB/tutorial02" />
       <recent name="$PROJECT_DIR$/EPUB/frontmatter" />
+      <recent name="$PROJECT_DIR$/EPUB/tutorial02" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.tutorial02.xhtml">
@@ -380,10 +402,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="40" y="23" width="1369" height="1417" extended-state="0" />
+    <frame x="40" y="23" width="1765" height="1417" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4601899" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3569405" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -471,14 +493,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EPUB/css/NeHe-EPUB.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.391304">
-          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/EPUB/frontmatter/intro.xhtml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.173913">
@@ -490,15 +504,7 @@
     <entry file="file://$PROJECT_DIR$/EPUB/frontmatter/preface.xhtml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-9.130435">
-          <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EPUB/frontmatter/toc.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.0">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
           <folding />
         </state>
       </provider>
@@ -513,16 +519,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/EPUB/tutorial02/tutorial02.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.608696">
-          <caret line="72" column="83" selection-start-line="72" selection-start-column="83" selection-end-line="72" selection-end-column="83" />
+        <state vertical-scroll-proportion="-2.6086957">
+          <caret line="6" column="41" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EPUB/css/NeHe-EPUB.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.347826">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/EPUB/package.opf">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17123288">
-          <caret line="10" column="60" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="62" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="54" column="97" selection-start-line="54" selection-start-column="97" selection-end-line="54" selection-end-column="97" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EPUB/frontmatter/toc.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.043478">
+          <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EPUB/frontmatter/colophon.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3516999">
+          <caret line="20" column="3" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
           <folding />
         </state>
       </provider>
