@@ -8,7 +8,7 @@
         <dc:publisher>Geo-F/X</dc:publisher>
  		<dc:date>2016-02-12T20:21:44Z</dc:date>
 		<dc:language>en-US</dc:language>
-		<meta property="dcterms:modified">2016-02-25T10:22:52Z</meta>
+		<meta property="dcterms:modified">2016-02-29T14:20:44Z</meta>
 		<dc:identifier id="bookid">urn:uuid:29d919dd-24f5-4384-be78-b447c9dc299b</dc:identifier>
 		<!--layout options-->
 		<meta property="rendition:layout">reflowable</meta>

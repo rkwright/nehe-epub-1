@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* CSS Stylers for the geofx-pages */
 body {
-   	margin: 0px;
+   	margin: 1em;
   	padding: 0px;
 	font-family: "Times New Roman", Times, serif;
 	font-size:110%;
