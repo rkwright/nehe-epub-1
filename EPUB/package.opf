@@ -8,7 +8,7 @@
         <dc:publisher>Geo-F/X</dc:publisher>
  		<dc:date>2016-02-12T20:21:44Z</dc:date>
 		<dc:language>en-US</dc:language>
-		<meta property="dcterms:modified">2016-03-02T08:58:28Z</meta>
+		<meta property="dcterms:modified">2016-03-02T09:19:14Z</meta>
 		<dc:identifier id="bookid">urn:uuid:29d919dd-24f5-4384-be78-b447c9dc299b</dc:identifier>
 		<!--layout options-->
 		<meta property="rendition:layout">reflowable</meta>
@@ -54,10 +54,10 @@
 		<item id="intro" href="frontmatter/intro.xhtml" media-type="application/xhtml+xml" />
 		<item id="colophon" href="frontmatter/colophon.xhtml" media-type="application/xhtml+xml" />
 
-		<!-- the tutorials -->
-		<item id="lesson01" href="tutorial01/tutorial01.xhtml" media-type="application/xhtml+xml"/>
-		<item id="lesson02" href="tutorial02/tutorial02.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
-		<item id="lesson02-gl" href="tutorial02/tutorial02webgl.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
+		<!-- the lessons -->
+		<item id="lesson01" href="lesson01/lesson01.xhtml" media-type="application/xhtml+xml"/>
+		<item id="lesson02" href="lesson02/lesson02.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
+		<item id="lesson02-gl" href="lesson02/lesson02webgl.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
 	</manifest>
 	<spine>
 		<itemref idref="coverpage" />

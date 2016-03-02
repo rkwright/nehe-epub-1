@@ -8,8 +8,8 @@
     <meta charset="utf-8"/>
 </head>
 <body>
-<h2>Tutorial 2 - Your First Polygon</h2>
-<p>In the this first tutorial, we'll cover pretty much all the source code (but not the comments).  In subsequent tutorials we'll include only the sections that are new.</p>
+<h2>Lesson 2 - Your First Polygon</h2>
+<p>In the this first lesson, we'll cover pretty much all the source code (but not the comments).  In subsequent lessons we'll include only the sections that are new.</p>
 <p>The first line just tells the browser we are using HTML5.</p>
 <pre><code class="language-html">&lt;!DOCTYPE html&gt; </code> </pre>
 <p>This next line just declares the namespaces. Note that demos are written in the XML serialization of HTML5.  In EPUB 3.1 (under development now for publication late 2016) non-XML HTML5 will be allowed.</p>
@@ -30,7 +30,7 @@ overflow: hidden;
 <pre><code class="language-html">&lt;script src="../js/three.js"&gt;&lt;/script&gt;
 &lt;script src="../js/Detector.js"&gt;&lt;/script&gt;</code></pre>
         
-<p>Then there is the body element, followed by a div to which we will attach the actual WebGL instance.  In a later tutorial we'll simplify this by just creating the div on the fly.  The div is followed by the script element that is the real heart of the WebGL demos.</p>
+<p>Then there is the body element, followed by a div to which we will attach the actual WebGL instance.  In a later lesson we'll simplify this by just creating the div on the fly.  The div is followed by the script element that is the real heart of the WebGL demos.</p>
 
 <pre><code class="language-html">&lt;body&gt;
 	&lt;div id="WebGLCanvas"&gt;
@@ -47,7 +47,7 @@ var canvasHeight = 1024;</code></pre>
 <pre><code class="language-javascript">initializeScene();
 renderScene();</code></pre>
 
-<p>So first comes the actual initialization of the scene.  This is boilerplate code that will be almost identical in each tutorial.  In a later tutorial, we'll refactor this code to create an object that hides all this and also provides a way to parameterize the setup.  But in these early versions we'll include it in the body of the document (though we won't include it in the text if the lessons themselves from now on).</p>
+<p>So first comes the actual initialization of the scene.  This is boilerplate code that will be almost identical in each lesson.  In a later lesson, we'll refactor this code to create an object that hides all this and also provides a way to parameterize the setup.  But in these early versions we'll include it in the body of the document (though we won't include it in the text if the lessons themselves from now on).</p>
 <p> First, check whether the browser supports WebGL. If so, instantiate the three.js 3D renderer. If not, use the three.js "Canvas" renderer which doesn't use WebGL or the GPU.  This is shown in this first demo just to let you know it can be done that way.  But the non-WebGL renderer lacks many features, so from now on, we'll just skip this.  If you don't have hardware-asssisted rendering (which is very rare these days, see <a href="http://caniuse.com/#feat=webgl">here</a>) the demos just won't work. Note that we enable anti-aliasing which is not enabled by default.</p>
       
  <pre><code class="language-javascript">if (Detector.webgl){
