@@ -20,3 +20,9 @@ pre
     font-size:70%;
     font-family: "Lucida Sans Typewriter", "Courier New", Courier, Monaco, monospace;
 }
+
+.inline-code
+{
+    font-size:90%;
+    font-family: "Lucida Sans Typewriter", "Courier New", Courier, Monaco, monospace;
+}
