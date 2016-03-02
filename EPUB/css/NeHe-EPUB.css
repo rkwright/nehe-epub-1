@@ -9,6 +9,10 @@ body {
 
 }
 
+h2 {
+	text-align:center;
+}
+
 pre
 {
     /* display:block; */
