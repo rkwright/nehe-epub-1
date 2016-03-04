@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f5511974-615e-45db-a977-796aafaa665e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EPUB/frontmatter/toc.xhtml" afterPath="$PROJECT_DIR$/EPUB/frontmatter/toc.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EPUB/lesson02/lesson02.xhtml" afterPath="$PROJECT_DIR$/EPUB/lesson02/lesson02.xhtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EPUB/lesson02/lesson02webgl.xhtml" afterPath="$PROJECT_DIR$/EPUB/lesson02/lesson02webgl.xhtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EPUB/lesson03/lesson03.xhtml" afterPath="$PROJECT_DIR$/EPUB/lesson03/lesson03.xhtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EPUB/lesson03/lesson03webgl.xhtml" afterPath="$PROJECT_DIR$/EPUB/lesson03/lesson03webgl.xhtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EPUB/package.opf" afterPath="$PROJECT_DIR$/EPUB/package.opf" />
     </list>
     <ignored path="Sandbox-NeHe-EPUB.iws" />
@@ -31,7 +31,7 @@
         <entry file="file://$PROJECT_DIR$/EPUB/package.opf">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="72" column="32" selection-start-line="72" selection-start-column="32" selection-end-line="72" selection-end-column="32" />
+              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -40,8 +40,8 @@
       <file leaf-file-name="lesson02webgl.xhtml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/EPUB/lesson02/lesson02webgl.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-26.086956">
-              <caret line="121" column="44" selection-start-line="121" selection-start-column="44" selection-end-line="121" selection-end-column="44" />
+            <state vertical-scroll-proportion="-9.695652">
+              <caret line="159" column="45" selection-start-line="159" selection-start-column="45" selection-end-line="159" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -50,11 +50,9 @@
       <file leaf-file-name="lesson03.xhtml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/EPUB/lesson03/lesson03.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="25.130434">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <marker date="1457030223000" expanded="true" signature="367:2935" placeholder="..." />
-              </folding>
+            <state vertical-scroll-proportion="-26.086956">
+              <caret line="40" column="4" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -62,18 +60,38 @@
       <file leaf-file-name="lesson03webgl.xhtml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/EPUB/lesson03/lesson03webgl.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-30.0">
-              <caret line="101" column="44" selection-start-line="101" selection-start-column="44" selection-end-line="101" selection-end-column="44" />
+            <state vertical-scroll-proportion="-2.6086957">
+              <caret line="4" column="74" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="74" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="toc.xhtml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="toc.xhtml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/EPUB/frontmatter/toc.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.40445486">
-              <caret line="23" column="87" selection-start-line="23" selection-start-column="87" selection-end-line="23" selection-end-column="87" />
+            <state vertical-scroll-proportion="-16.956522">
+              <caret line="26" column="83" selection-start-line="26" selection-start-column="83" selection-end-line="26" selection-end-column="83" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lesson04webgl.xhtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/EPUB/lesson04/lesson04webgl.xhtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-25.347826">
+              <caret line="206" column="13" selection-start-line="189" selection-start-column="0" selection-end-line="206" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lesson04.xhtml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/EPUB/lesson04/lesson04.xhtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.5978898">
+              <caret line="34" column="34" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -100,11 +118,14 @@
         <option value="$PROJECT_DIR$/EPUB/frontmatter/cover.xhtml" />
         <option value="$PROJECT_DIR$/EPUB/lesson02/lesson02.xhtml" />
         <option value="$PROJECT_DIR$/EPUB/lesson03/lesson03webgl.html" />
+        <option value="$PROJECT_DIR$/EPUB/lesson03/lesson03webgl.xhtml" />
+        <option value="$PROJECT_DIR$/EPUB/lesson02/lesson02webgl.xhtml" />
+        <option value="$PROJECT_DIR$/EPUB/lesson04/lesson04webgl.html" />
         <option value="$PROJECT_DIR$/EPUB/lesson03/lesson03.xhtml" />
         <option value="$PROJECT_DIR$/EPUB/package.opf" />
+        <option value="$PROJECT_DIR$/EPUB/lesson04/lesson04webgl.xhtml" />
         <option value="$PROJECT_DIR$/EPUB/frontmatter/toc.xhtml" />
-        <option value="$PROJECT_DIR$/EPUB/lesson02/lesson02webgl.xhtml" />
-        <option value="$PROJECT_DIR$/EPUB/lesson03/lesson03webgl.xhtml" />
+        <option value="$PROJECT_DIR$/EPUB/lesson04/lesson04.xhtml" />
       </list>
     </option>
   </component>
@@ -174,6 +195,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="EPUB" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NeHe-EPUB-1-16" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sandbox-NeHe-EPUB" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EPUB" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lesson04" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -299,15 +338,13 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/EPUB/lesson04" />
       <recent name="$PROJECT_DIR$/EPUB/frontmatter" />
       <recent name="$PROJECT_DIR$/EPUB/tutorial02" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.lesson03webgl.xhtml">
+  <component name="RunManager" selected="JavaScript Debug.lesson04webgl.xhtml">
     <configuration default="false" name="tutorial02.xhtml" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Sandbox-NeHe-EPUB/EPUB/tutorial02/tutorial02.xhtml">
-      <method />
-    </configuration>
-    <configuration default="false" name="tutorial02-p.xhtml" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Sandbox-NeHe-EPUB/EPUB/tutorial02/tutorial02-p.xhtml">
       <method />
     </configuration>
     <configuration default="false" name="tutorial02webgl.xhtml (1)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/NeHe-EPUB-2-15/EPUB/tutorial02/tutorial02webgl.xhtml">
@@ -317,6 +354,9 @@
       <method />
     </configuration>
     <configuration default="false" name="lesson02webgl.xhtml" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/NeHe-EPUB-1-16/EPUB/lesson02/lesson02webgl.xhtml">
+      <method />
+    </configuration>
+    <configuration default="false" name="lesson04webgl.xhtml" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/NeHe-EPUB-1-16/EPUB/lesson04/lesson04webgl.xhtml">
       <method />
     </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -369,18 +409,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.tutorial02.xhtml" />
-      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.tutorial02-p.xhtml" />
-      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.tutorial02webgl.xhtml (1)" />
-      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.lesson03webgl.xhtml" />
-      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.lesson02webgl.xhtml" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.tutorial02webgl.xhtml (1)" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.lesson03webgl.xhtml" />
+      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.lesson02webgl.xhtml" />
+      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.lesson04webgl.xhtml" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.lesson03webgl.xhtml" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.lesson02webgl.xhtml" />
-        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.tutorial02webgl.xhtml (1)" />
-        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.tutorial02.xhtml" />
-        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.tutorial02-p.xhtml" />
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.lesson04webgl.xhtml" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.lesson03webgl.xhtml" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.lesson02webgl.xhtml" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.tutorial02webgl.xhtml (1)" />
+        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.tutorial02.xhtml" />
       </list>
     </recent_temporary>
   </component>
@@ -399,9 +439,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="40" y="23" width="2520" height="1417" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35674602" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35674602" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -665,44 +705,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EPUB/lesson03/lesson03.xhtml">
+    <entry file="file://$PROJECT_DIR$/EPUB/lesson02/lesson02webgl.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="25.130434">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1457030223000" expanded="true" signature="367:2935" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EPUB/package.opf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="72" column="32" selection-start-line="72" selection-start-column="32" selection-end-line="72" selection-end-column="32" />
+        <state vertical-scroll-proportion="-9.695652">
+          <caret line="159" column="45" selection-start-line="159" selection-start-column="45" selection-end-line="159" selection-end-column="45" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EPUB/lesson02/lesson02webgl.xhtml">
+    <entry file="file://$PROJECT_DIR$/EPUB/lesson03/lesson03.xhtml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-26.086956">
-          <caret line="121" column="44" selection-start-line="121" selection-start-column="44" selection-end-line="121" selection-end-column="44" />
+          <caret line="40" column="4" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/EPUB/lesson03/lesson03webgl.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-30.0">
-          <caret line="101" column="44" selection-start-line="101" selection-start-column="44" selection-end-line="101" selection-end-column="44" />
+        <state vertical-scroll-proportion="-2.6086957">
+          <caret line="4" column="74" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EPUB/package.opf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/EPUB/frontmatter/toc.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40445486">
-          <caret line="23" column="87" selection-start-line="23" selection-start-column="87" selection-end-line="23" selection-end-column="87" />
+        <state vertical-scroll-proportion="-16.956522">
+          <caret line="26" column="83" selection-start-line="26" selection-start-column="83" selection-end-line="26" selection-end-column="83" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EPUB/lesson04/lesson04webgl.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-25.347826">
+          <caret line="206" column="13" selection-start-line="189" selection-start-column="0" selection-end-line="206" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EPUB/lesson04/lesson04.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5978898">
+          <caret line="34" column="34" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
           <folding />
         </state>
       </provider>

@@ -95,7 +95,7 @@
 				// example (http://mrdoob.github.com/three.js/examples/
 				// -> canvas_camera_orthographic2.html), which allows to play around with these
 				// parameters.
-				// The camera is moved 10 units towards the z axis to allow looking to the center of
+				// The camera is moved 15 units towards the z axis to allow looking to the center of
 				// the scene.
 				// After definition, the camera has to be added to the scene.
 				camera = new THREE.PerspectiveCamera(45, canvasWidth / canvasHeight, 1, 100);
@@ -116,8 +116,6 @@
 				// To color the surface, a material has to be created. If all vertices shall have
 				// different colors, we need to set the vertex colors of each face. The colors in
 				// between will be interpolated as color gradients.
-				// Unfortunately, the canvas renderer doesn't support vertex yolors (yet [Three.js,
-				// release 50]). Either you accept a white face color, or set another face color.
 
 				triangleGeometry.faces[0].vertexColors[0] = new THREE.Color(0xFF0000);
 				triangleGeometry.faces[0].vertexColors[1] = new THREE.Color(0x00FF00);
