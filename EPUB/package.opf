@@ -7,7 +7,7 @@
         <dc:creator>Ric Wright</dc:creator>
         <dc:publisher>Geo-F/X</dc:publisher>
  		<dc:date>2016-02-12T20:21:44Z</dc:date>
-   	    <meta property="dcterms:modified">2016-03-04T10:38:38Z</meta>
+   	    <meta property="dcterms:modified">2016-03-04T15:09:30Z</meta>
 		<dc:language>en-US</dc:language>
 		<dc:identifier id="bookid">urn:uuid:29d919dd-24f5-4384-be78-b447c9dc299b</dc:identifier>
 		<!--layout options-->
@@ -20,6 +20,7 @@
   		<item id="webgl_logo" href="images/webgl.jpg" media-type="image/jpeg" />
  		<item id="nehe-cover.png" href="images/NeHe-1-16.png" media-type="image/png" />
  		<item id="checkerboard" href="images/checkerboard.jpg" media-type="image/jpeg" />
+ 		<item id="nehe" href="images/NeHe.jpg" media-type="image/jpeg" />
 
         <!-- svg -->
         <item id="opengl-square" href="svg/OpenGL-Square.svg" media-type="image/svg+xml" />
@@ -62,6 +63,10 @@
 		<item id="lesson03-gl" href="lesson03/lesson03webgl.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
 		<item id="lesson04" href="lesson04/lesson04.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
 		<item id="lesson04-gl" href="lesson04/lesson04webgl.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
+		<item id="lesson05" href="lesson05/lesson05.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
+		<item id="lesson05-gl" href="lesson05/lesson05webgl.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
+		<item id="lesson06" href="lesson06/lesson06.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
+		<item id="lesson06-gl" href="lesson06/lesson06webgl.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
 	</manifest>
 	<spine>
 		<itemref idref="coverpage" />
@@ -75,6 +80,10 @@
 		<itemref idref="lesson03-gl" properties="rendition:layout-pre-paginated"/>
 		<itemref idref="lesson04" />
 		<itemref idref="lesson04-gl" properties="rendition:layout-pre-paginated"/>
+		<itemref idref="lesson05" />
+		<itemref idref="lesson05-gl" properties="rendition:layout-pre-paginated"/>
+		<itemref idref="lesson06" />
+		<itemref idref="lesson06-gl" properties="rendition:layout-pre-paginated"/>
 		<itemref idref="colophon"/>
 	</spine>
 </package>
