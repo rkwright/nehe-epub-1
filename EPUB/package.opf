@@ -7,7 +7,7 @@
         <dc:creator>Ric Wright</dc:creator>
         <dc:publisher>Geo-F/X</dc:publisher>
  		<dc:date>2016-02-12T20:21:44Z</dc:date>
-   	    <meta property="dcterms:modified">2016-03-04T15:09:30Z</meta>
+   	    <meta property="dcterms:modified">2016-03-17T14:36:50Z</meta>
 		<dc:language>en-US</dc:language>
 		<dc:identifier id="bookid">urn:uuid:29d919dd-24f5-4384-be78-b447c9dc299b</dc:identifier>
 		<!--layout options-->
@@ -21,6 +21,9 @@
  		<item id="nehe-cover.png" href="images/NeHe-1-16.png" media-type="image/png" />
  		<item id="checkerboard" href="images/checkerboard.jpg" media-type="image/jpeg" />
  		<item id="nehe" href="images/NeHe.jpg" media-type="image/jpeg" />
+ 		<item id="StoneWall-64" href="images/StoneWall-64.png" media-type="image/png" />
+ 		<item id="StoneWall-256" href="images/StoneWall-256.png" media-type="image/png" />
+ 		<item id="StoneWall-1024" href="images/StoneWall-1024.png" media-type="image/png" />
 
         <!-- svg -->
         <item id="opengl-square" href="svg/OpenGL-Square.svg" media-type="image/svg+xml" />
@@ -67,6 +70,8 @@
 		<item id="lesson05-gl" href="lesson05/lesson05webgl.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
 		<item id="lesson06" href="lesson06/lesson06.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
 		<item id="lesson06-gl" href="lesson06/lesson06webgl.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
+		<item id="lesson07" href="lesson07/lesson07.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
+		<item id="lesson07-gl" href="lesson07/lesson07webgl.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
 	</manifest>
 	<spine>
 		<itemref idref="coverpage" />
@@ -84,6 +89,8 @@
 		<itemref idref="lesson05-gl" properties="rendition:layout-pre-paginated"/>
 		<itemref idref="lesson06" />
 		<itemref idref="lesson06-gl" properties="rendition:layout-pre-paginated"/>
+		<itemref idref="lesson07" />
+		<itemref idref="lesson07-gl" properties="rendition:layout-pre-paginated"/>
 		<itemref idref="colophon"/>
 	</spine>
 </package>

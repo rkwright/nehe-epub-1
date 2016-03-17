@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f5511974-615e-45db-a977-796aafaa665e" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EPUB/frontmatter/toc.xhtml" afterPath="$PROJECT_DIR$/EPUB/frontmatter/toc.xhtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EPUB/lesson06/lesson06webgl.xhtml" afterPath="$PROJECT_DIR$/EPUB/lesson06/lesson06webgl.xhtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EPUB/package.opf" afterPath="$PROJECT_DIR$/EPUB/package.opf" />
     </list>
     <ignored path="Sandbox-NeHe-EPUB.iws" />
@@ -28,27 +30,37 @@
         <entry file="file://$PROJECT_DIR$/EPUB/package.opf">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="22" column="41" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
+              <caret line="25" column="61" selection-start-line="25" selection-start-column="61" selection-end-line="25" selection-end-column="61" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="lesson06webgl.xhtml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="lesson06webgl.xhtml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/EPUB/lesson06/lesson06webgl.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8968347">
-              <caret line="74" column="43" selection-start-line="74" selection-start-column="43" selection-end-line="74" selection-end-column="43" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="4" column="73" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="73" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="lesson03webgl.xhtml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/EPUB/lesson03/lesson03webgl.xhtml">
+      <file leaf-file-name="lesson07webgl.xhtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/EPUB/lesson07/lesson07webgl.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.6086957">
-              <caret line="4" column="59" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="74" />
+            <state vertical-scroll-proportion="-8.155844">
+              <caret line="300" column="17" selection-start-line="300" selection-start-column="17" selection-end-line="300" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lesson07.xhtml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/EPUB/lesson07/lesson07.xhtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.89788735">
+              <caret line="51" column="202" selection-start-line="51" selection-start-column="202" selection-end-line="51" selection-end-column="202" />
               <folding />
             </state>
           </provider>
@@ -57,65 +69,8 @@
       <file leaf-file-name="toc.xhtml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/EPUB/frontmatter/toc.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-20.869566">
-              <caret line="32" column="79" selection-start-line="32" selection-start-column="79" selection-end-line="32" selection-end-column="79" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="lesson04webgl.xhtml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/EPUB/lesson04/lesson04webgl.xhtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-48.260868">
-              <caret line="76" column="34" selection-start-line="76" selection-start-column="34" selection-end-line="76" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="lesson05webgl.xhtml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/EPUB/lesson05/lesson05webgl.xhtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="86.17391">
-              <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NeHe.jpg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/EPUB/images/NeHe.jpg">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="lesson06.xhtml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/EPUB/lesson06/lesson06.xhtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="1" column="27" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="lesson05.xhtml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/EPUB/lesson05/lesson05.xhtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="5.304348">
-              <caret line="33" column="61" selection-start-line="33" selection-start-column="61" selection-end-line="33" selection-end-column="61" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="lesson04.xhtml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/EPUB/lesson04/lesson04.xhtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-22.173914">
-              <caret line="34" column="34" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -152,9 +107,13 @@
         <option value="$PROJECT_DIR$/EPUB/lesson05/lesson05.xhtml" />
         <option value="$PROJECT_DIR$/EPUB/lesson05/lesson05webgl.xhtml" />
         <option value="$PROJECT_DIR$/EPUB/lesson06/lesson06.xhtml" />
-        <option value="$PROJECT_DIR$/EPUB/package.opf" />
-        <option value="$PROJECT_DIR$/EPUB/frontmatter/toc.xhtml" />
         <option value="$PROJECT_DIR$/EPUB/lesson06/lesson06webgl.xhtml" />
+        <option value="$PROJECT_DIR$/EPUB/lesson07/lesson07webgl.html" />
+        <option value="$PROJECT_DIR$/EPUB/frontmatter/toc.xhtml" />
+        <option value="$USER_HOME$/Documents/github/readium-js-viewer-DD/epub_content/epub_library.opds" />
+        <option value="$PROJECT_DIR$/EPUB/lesson07/lesson07webgl.xhtml" />
+        <option value="$PROJECT_DIR$/EPUB/package.opf" />
+        <option value="$PROJECT_DIR$/EPUB/lesson07/lesson07.xhtml" />
       </list>
     </option>
   </component>
@@ -195,6 +154,7 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -224,6 +184,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="EPUB" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NeHe-EPUB-1-16" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sandbox-NeHe-EPUB" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EPUB" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lesson07" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -391,7 +369,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -412,10 +389,7 @@
       <recent name="$PROJECT_DIR$/EPUB/tutorial02" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.lesson05webgl.xhtml">
-    <configuration default="false" name="tutorial02webgl.xhtml (1)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/NeHe-EPUB-2-15/EPUB/tutorial02/tutorial02webgl.xhtml">
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JavaScript Debug.lesson07webgl.xhtml">
     <configuration default="false" name="lesson03webgl.xhtml" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/NeHe-EPUB-1-16/EPUB/lesson03/lesson03webgl.xhtml">
       <method />
     </configuration>
@@ -426,6 +400,9 @@
       <method />
     </configuration>
     <configuration default="false" name="lesson05webgl.xhtml" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/NeHe-EPUB-1-16/EPUB/lesson05/lesson05webgl.xhtml">
+      <method />
+    </configuration>
+    <configuration default="false" name="lesson07webgl.xhtml" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/NeHe-EPUB-1-16/EPUB/lesson07/lesson07webgl.xhtml">
       <method />
     </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -477,19 +454,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.tutorial02webgl.xhtml (1)" />
-      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.lesson03webgl.xhtml" />
-      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.lesson02webgl.xhtml" />
-      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.lesson04webgl.xhtml" />
-      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.lesson05webgl.xhtml" />
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.lesson03webgl.xhtml" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.lesson02webgl.xhtml" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.lesson04webgl.xhtml" />
+      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.lesson05webgl.xhtml" />
+      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.lesson07webgl.xhtml" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.lesson05webgl.xhtml" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.lesson04webgl.xhtml" />
-        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.lesson03webgl.xhtml" />
-        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.lesson02webgl.xhtml" />
-        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.tutorial02webgl.xhtml (1)" />
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.lesson07webgl.xhtml" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.lesson05webgl.xhtml" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.lesson04webgl.xhtml" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.lesson03webgl.xhtml" />
+        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.lesson02webgl.xhtml" />
       </list>
     </recent_temporary>
   </component>
@@ -508,13 +485,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="40" y="23" width="2520" height="1417" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35674602" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3563492" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32937685" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3301187" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -561,6 +538,70 @@
     <entry file="file://$PROJECT_DIR$/EPUB/package.opf">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="26" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EPUB/lesson06/lesson06webgl.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="73" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EPUB/lesson07/lesson07webgl.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EPUB/lesson07/lesson07.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EPUB/package.opf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="26" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EPUB/lesson06/lesson06webgl.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="73" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EPUB/lesson07/lesson07webgl.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EPUB/lesson07/lesson07.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="121" selection-start-line="11" selection-start-column="121" selection-end-line="11" selection-end-column="121" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EPUB/package.opf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -570,7 +611,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -578,7 +618,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -586,7 +625,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -594,7 +632,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="22" column="113" selection-start-line="22" selection-start-column="113" selection-end-line="22" selection-end-column="113" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -610,7 +647,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="104" selection-start-line="18" selection-start-column="104" selection-end-line="18" selection-end-column="104" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -618,7 +654,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="70" column="85" selection-start-line="70" selection-start-column="85" selection-end-line="70" selection-end-column="85" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -626,7 +661,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="31" column="1" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -634,7 +668,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -650,7 +683,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -658,7 +690,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -681,7 +712,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -689,7 +719,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -705,7 +734,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="84" column="15" selection-start-line="84" selection-start-column="15" selection-end-line="84" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -727,7 +755,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -735,7 +762,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.20817271">
           <caret line="18" column="104" selection-start-line="18" selection-start-column="104" selection-end-line="18" selection-end-column="104" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -743,7 +769,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2544333">
           <caret line="22" column="113" selection-start-line="22" selection-start-column="113" selection-end-line="22" selection-end-column="113" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -751,7 +776,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.61295295">
           <caret line="136" column="113" selection-start-line="131" selection-start-column="3" selection-end-line="136" selection-end-column="113" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -759,7 +783,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.092521206">
           <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -767,7 +790,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.35851967">
           <caret line="31" column="1" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -775,7 +797,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.15034695">
           <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -783,7 +804,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-9.695652">
           <caret line="159" column="45" selection-start-line="159" selection-start-column="45" selection-end-line="159" selection-end-column="45" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -791,22 +811,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-26.086956">
           <caret line="40" column="4" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EPUB/lesson04/lesson04.xhtml">
+    <entry file="file://$PROJECT_DIR$/EPUB/lesson03/lesson03webgl.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-22.173914">
-          <caret line="34" column="34" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
-          <folding />
+        <state vertical-scroll-proportion="0.011565151">
+          <caret line="4" column="59" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="74" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/EPUB/lesson04/lesson04webgl.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-48.260868">
+        <state vertical-scroll-proportion="0.011565151">
           <caret line="76" column="34" selection-start-line="76" selection-start-column="34" selection-end-line="76" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EPUB/lesson05/lesson05webgl.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35851967">
+          <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
           <folding />
         </state>
       </provider>
@@ -816,26 +841,54 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EPUB/lesson03/lesson03webgl.xhtml">
+    <entry file="file://$PROJECT_DIR$/EPUB/lesson06/lesson06.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.6086957">
-          <caret line="4" column="59" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="74" />
-          <folding />
+        <state vertical-scroll-proportion="0.011565151">
+          <caret line="1" column="27" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/EPUB/lesson05/lesson05.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="5.304348">
+        <state vertical-scroll-proportion="0.38164997">
           <caret line="33" column="61" selection-start-line="33" selection-start-column="61" selection-end-line="33" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EPUB/lesson04/lesson04.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.39321512">
+          <caret line="34" column="34" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EPUB/lesson06/lesson06webgl.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="73" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="73" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EPUB/lesson05/lesson05webgl.xhtml">
+    <entry file="file://$USER_HOME$/Documents/github/readium-js-viewer-DD/epub_content/epub_library.opds">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="86.17391">
-          <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
+        <state vertical-scroll-proportion="0.79452056">
+          <caret line="84" column="0" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EPUB/lesson07/lesson07webgl.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.155844">
+          <caret line="300" column="17" selection-start-line="300" selection-start-column="17" selection-end-line="300" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EPUB/frontmatter/toc.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -843,31 +896,15 @@
     <entry file="file://$PROJECT_DIR$/EPUB/package.opf">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="41" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
+          <caret line="25" column="61" selection-start-line="25" selection-start-column="61" selection-end-line="25" selection-end-column="61" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EPUB/frontmatter/toc.xhtml">
+    <entry file="file://$PROJECT_DIR$/EPUB/lesson07/lesson07.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-20.869566">
-          <caret line="32" column="79" selection-start-line="32" selection-start-column="79" selection-end-line="32" selection-end-column="79" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EPUB/lesson06/lesson06.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="1" column="27" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EPUB/lesson06/lesson06webgl.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8968347">
-          <caret line="74" column="43" selection-start-line="74" selection-start-column="43" selection-end-line="74" selection-end-column="43" />
+        <state vertical-scroll-proportion="0.89788735">
+          <caret line="51" column="202" selection-start-line="51" selection-start-column="202" selection-end-line="51" selection-end-column="202" />
           <folding />
         </state>
       </provider>
