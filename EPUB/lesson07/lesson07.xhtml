@@ -49,11 +49,51 @@
   </li>
 </ul>
 <p>Whew. Lot of verbiage. The net net is that the first is the most performant and the last looks the best. Depending on the size and number of textures (and how patient you are) will determine which you will want to use.</p>
-<p>In this (very simple) lesson, we'll be using a texture that is larger or roughly the same size as the surface being textured, so only the magnification filters actually can be seen to have an effect.
-</p>
-<p></p>
+<p>As usual, almost all of the HTML is the same as previous lessons, as is most of the script. However, there is a small addition to the HTML of an absolutely-positioned div which contains some instructions for the user as well as a few elements we use to tell the user the size of the current texture as well as which filters are currently in use.</p>
 
-           
+<pre><code class="language-html">&lt;div id="overlaytext" style="position: absolute; top: 10px; left: 10px"&gt;
+    'F': Loop through the three texture filters (only for WebGL renderer)&lt;br/&gt;
+    'L': Toggle light (only for WebGL renderer)&lt;br/&gt;
+    Cursor left / right: Control y rotation speed&lt;br/&gt;
+    Cursor up / down: Control x rotation speed&lt;br/&gt;
+    Renderer:
+        &lt;p&gt;Min Filter: &lt;span id="minFilterType"&gt;Linear&lt;/span&gt;&lt;br/&gt;
+        Mag Filter: &lt;span id="magFilterType"&gt;Linear&lt/span>&lt;/p&gt;
+        &lt;p id="textureSize"&gt;Texture Size: 1024&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+        
+<p>In the script there are a number of changes this time. First, we declare some global variables to hold the various parameters:</p>
+
+<p>First, parameters to control the rate and direction of rotation:</p>
+
+<pre><code class="language-javascript">var xRotation = 0.0;
+var yRotation = 0.0;
+var xSpeed = 0.0;
+var ySpeed = 0.0;
+</code></pre>
+<p>Then the texture parameters:</p>
+
+<pre><code class="language-javascript">var wallTexture;
+var textureSize = 1024;
+var textureFilter = 0;</code></pre>
+
+<p>We are adding some lights this time too, so and we want to be able to turn them on and off so we declare them globally. </p>
+<pre><code class="language-javascript">var ambientLight;
+var directionalLight;</code></pre>
+
+<p>And finally, the cube's mesh as well. We need to access some of the properties of the mesh in our key handlers, so we need it declared globally. </p>
+            
+<pre><code class="language-javascript">var cubeMesh;</code></pre>
+
+<p>You may be thinking &quot;this isn't very object-oriented&quot; and it's not, but we'll clean that up when we refactor the code in lesson 9.</p>
+<p>Most of initializeScene is the same, but there are some changes. First we load the texture then create the material for our cube.</p>
+
+<pre><code class="language-javascript">wallTexture = new THREE.ImageUtils.loadTexture("../images/StoneWall-"+textureSize+".png");
+var cubeMaterial = new THREE.MeshPhongMaterial({ map:wallTexture, side:THREE.DoubleSide })</code></pre>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
 <p>And that's it!  Go on to the next page to see the actual rendered demo in all its texture filtered glory!</p>
 </body>
 </html>

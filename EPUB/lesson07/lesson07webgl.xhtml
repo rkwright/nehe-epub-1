@@ -60,23 +60,23 @@
 			var xSpeed = 0.0;
 			var ySpeed = 0.0;
 
-			// Translation along the z axis
-			var zTranslation = 0.0;
-
-			// The x and y speed is controlled by the cursor keys.
-			// The translation on the z axis by 'Page up / down'.
-			// 'crateTexture' is the texture object. We set it global, to modify it's attributes
-			// later on.
-			// 'textureFilter' will have three states (0, 1 or 2), controlling the current texture
-			// filtering (nearest, linear or mipmapped).
+            // Translation along the z axis
+            var zTranslation = 0.0;
 
 			// Texture and flag for current texture filter
-			var crateTexture;
-            var textureSize = 256;
+			var wallTexture;
+            var textureSize = 1024;
 			var textureFilter = 0;
 
-			// intensity of the light so we can turn it on and off
-			var intensity = 1;
+            var filter = [ THREE.NearestFilter,
+                           THREE.LinearFilter,
+                           THREE.NearestMipMapNearestFilter,
+                           THREE.LinearMipMapLinearFilter ];
+
+            var filterType = [ "Nearest",
+                               "Linear",
+                               "NearestMipMapNearest",
+                               "LinearMipMapLinear" ];
 
             // The next two objects hold two different kinds of light: Ambient and directional light.
             // 'enableLights' is the flag, which is switched by the key 'f'.
@@ -85,7 +85,7 @@
 
             // Global mesh object of the cube
 			var cubeMesh;
-            var cubeGeometry;
+
 
 			// Initialize the scene
 			initializeScene();
@@ -162,11 +162,11 @@
 				scene.add(camera);
 
 				// Create the cube
-				cubeGeometry = new THREE.BoxGeometry(2.0, 2.0, 2.0);
+				var cubeGeometry = new THREE.BoxGeometry(2.0, 2.0, 2.0);
 
 
 				// Load an image as texture
-				crateTexture = new THREE.ImageUtils.loadTexture("../images/StoneWall-"+textureSize+".png");
+				wallTexture = new THREE.ImageUtils.loadTexture("../images/StoneWall-"+textureSize+".png");
 
 				// Create a material, which contains the texture.
 				// Unfortunately, the CanvasRenderer doesn't support MeshLambertMaterial in combination
@@ -179,31 +179,30 @@
 				// side is not rendered (backface culling). But this performance optimization sometimes
 				// leads to wholes in the surface. When this happens in your surface, simply set
 				// 'doubleSided' to 'true'.
-				var cubeMaterial = new THREE.MeshPhongMaterial({ map:crateTexture, side:THREE.DoubleSide });
+				var cubeMaterial = new THREE.MeshPhongMaterial({ map:wallTexture, side:THREE.DoubleSide });
 
 				if(!webGLAvailable){
 					cubeMaterial = new THREE.MeshBasicMaterial({
-						map:crateTexture,
+						map:wallTexture,
 						side:THREE.DoubleSide
 					});
 				}
 
-				// Create a mesh and insert the geometry and the material. Translate the
-				// whole mesh by 'zTranslation' units on the z axis. Finally add the mesh 
+				// Create a mesh and insert the geometry and the material. Finally, add the mesh
 				// to the scene.
 				cubeMesh = new THREE.Mesh(cubeGeometry, cubeMaterial);
-				cubeMesh.position.set(0.0, 0.0, zTranslation);
+				cubeMesh.position.set(0.0, 0.0, 0.0);
 				scene.add(cubeMesh);
 
 				// Ambient light has no direction, it illuminates every object with the same
 				// intensity. If only ambient light is used, no shading effects will occur.
-				ambientLight = new THREE.AmbientLight(0x010101, intensity);
+				ambientLight = new THREE.AmbientLight(0x010101, 1.0);
 				scene.add(ambientLight);
 
 				// Directional light has a source and shines in all directions, like the sun.
 				// This behaviour creates shading effects.
-				directionalLight = new THREE.DirectionalLight(0xffffff, intensity);
-                directionalLight.position.set( 0, 0, 6 ).normalize();
+				directionalLight = new THREE.DirectionalLight(0xffffff, 1.0);
+                directionalLight.position.set( 0, 1, 6 ).normalize();
                 scene.add(directionalLight);
 
 				// Add a listener for 'keydown' events. By this listener, all key events will be
@@ -220,38 +219,37 @@
                 // Get the key code of the pressed key
                 var keyCode = event.which;
 
-                // 'F' - Toggle through the texture filters
-                if (keyCode == 70) {
+                if (keyCode == 70) {        // 'F' - Toggle through the texture filters
                     updateFilter();
 
-                    // 'L' - Toggle light
-                } else if (keyCode == 76) {
+                }
+                else if (keyCode == 76) {   // 'L' - Toggle light
                     // Just toggle the intensity to turn lights on and off
-                    intensity = intensity > 0 ? 0 : 1;
-                    directionalLight.intensity = ambientLight.intensity = intensity;
+                    ambientLight.intensity = ambientLight.intensity > 0 ? 0 : 1;
+                    directionalLight.intensity = directionalLight.intensity > 0 ? 0 : 1;
 
-                    // Cursor up
-                } else if (keyCode == 38) {
+                }
+                else if (keyCode == 38) {   // Cursor up
                     xSpeed -= 0.005;
 
-                    // Cursor down
-                } else if (keyCode == 40) {
+                }
+                else if (keyCode == 40) {   // Cursor down
                     xSpeed += 0.005;
 
-                    // Cursor left
-                } else if (keyCode == 37) {
+                }
+                else if (keyCode == 37) {   // Cursor left
                     ySpeed -= 0.005;
 
-                    // Cursor right
-                } else if (keyCode == 39) {
+                }
+                else if (keyCode == 39) {   // Cursor right
                     ySpeed += 0.005;
 
-                    // Page up
-                } else if (keyCode == 33) {
+                }
+                else if (keyCode == 33) {   // page up
                     zTranslation -= 0.2;
 
-                    // Page down
-                } else if (keyCode == 34) {
+                }
+                else if (keyCode == 34) {   // Page down
                     zTranslation += 0.2;
                 }
                 else if (keyCode == 84) {   // 'T' switch textures
@@ -262,8 +260,9 @@
                     cubeMesh.material.needsUpdate = true;
 
                     document.getElementById("textureSize").innerHTML = "Texture Size: " + textureSize;
-
                 }
+
+                // need to stop propagation of the event or the Reading System will probably take back the focus
 				event.stopPropagation();
             }
 
@@ -271,39 +270,15 @@
              *  Just update the filters
              */
             function updateFilter() {
-                var magFilterType;
-                var minFilterType;
-                switch (textureFilter) {
-                    case 0:
-                        cubeMesh.material.map.minFilter = THREE.NearestFilter;
-                        cubeMesh.material.map.magFilter = THREE.NearestFilter;
-						minFilterType = "Nearest";
-                        magFilterType = "Nearest";
-                        break;
-                    case 1:
-                        cubeMesh.material.map.minFilter = THREE.LinearFilter;
-                        cubeMesh.material.map.magFilter = THREE.LinearFilter;
-						minFilterType = "Linear";
-                        magFilterType = "Linear";
-                        break;
-                    case 2:
-                        cubeMesh.material.map.minFilter = THREE.NearestMipMapNearestFilter;
-                        cubeMesh.material.map.magFilter = THREE.NearestFilter;
-						minFilterType = "NearestMipMapNearest";
-                        magFilterType = "Nearest";
-                        break;
-                    case 3:
-                        cubeMesh.material.map.minFilter = THREE.LinearMipMapLinearFilter;
-                        cubeMesh.material.map.magFilter = THREE.LinearFilter;
-						minFilterType = "LinearMipMapLinear";
-                        magFilterType = "Linear";
-                        break;
-                }
 
                 textureFilter = ++textureFilter % 4;
+
+                cubeMesh.material.map.minFilter = filter[textureFilter];
+                cubeMesh.material.map.magFilter = filter[textureFilter % 2];
                 cubeMesh.material.map.needsUpdate = true;
-                document.getElementById("magFilterType").innerHTML = magFilterType;
-                document.getElementById("minFilterType").innerHTML = minFilterType;
+
+                document.getElementById("minFilterType").innerHTML = filterType[textureFilter];
+                document.getElementById("magFilterType").innerHTML = filterType[textureFilter % 2];
             }
 
 			/**
@@ -315,10 +290,10 @@
 				yRotation += ySpeed;
 				cubeMesh.rotation.set(xRotation, yRotation, 0.0);
 
-				// Apply the the translation along the z axis
-				cubeMesh.position.z = zTranslation;
+                // Apply the the translation along the z axis
+                cubeMesh.position.z = zTranslation;
 
-				// Define the function, which is called by the browser supported timer loop. If the
+                // Define the function, which is called by the browser supported timer loop. If the
 				// browser tab is not visible, the animation is paused. So 'animateScene()' is called
 				// in a browser controlled loop.
 				requestAnimationFrame(animateScene);
