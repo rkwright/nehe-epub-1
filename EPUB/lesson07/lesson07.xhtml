@@ -75,7 +75,17 @@ var ySpeed = 0.0;
 
 <pre><code class="language-javascript">var wallTexture;
 var textureSize = 1024;
-var textureFilter = 0;</code></pre>
+var textureFilter = 0;
+
+var filter = [ THREE.NearestFilter,
+               THREE.LinearFilter,
+               THREE.NearestMipMapNearestFilter,
+               THREE.LinearMipMapLinearFilter ];
+
+var filterType = [ "Nearest",
+                   "Linear",
+                   "NearestMipMapNearest",
+                   "LinearMipMapLinear" ];</code></pre>
 
 <p>We are adding some lights this time too, so and we want to be able to turn them on and off so we declare them globally. </p>
 <pre><code class="language-javascript">var ambientLight;
@@ -90,7 +100,8 @@ var directionalLight;</code></pre>
 
 <pre><code class="language-javascript">wallTexture = new THREE.ImageUtils.loadTexture("../images/StoneWall-"+textureSize+".png");
 var cubeMaterial = new THREE.MeshPhongMaterial({ map:wallTexture, side:THREE.DoubleSide })</code></pre>
-<p>&nbsp;</p>
+
+<p>We </p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
