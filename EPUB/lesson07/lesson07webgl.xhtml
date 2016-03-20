@@ -178,7 +178,7 @@
 				// side is not rendered (backface culling). But this performance optimization sometimes
 				// leads to wholes in the surface. When this happens in your surface, simply set
 				// 'doubleSided' to 'true'.
-				var cubeMaterial = new THREE.MeshPhongMaterial({ map:wallTexture, side:THREE.DoubleSide });
+				var cubeMaterial = new THREE.MeshLambertMaterial({ map:wallTexture, side:THREE.DoubleSide });
 
 				if(!webGLAvailable){
 					cubeMaterial = new THREE.MeshBasicMaterial({
