@@ -1,26 +1,41 @@
+/**
+ *  @author rkwright   /  http://www.geofx.com
+ */
+
+var GFX = { revision: '02' };
+
 //some constants
 	var    	X_AXIS = 0;
 	var    	Y_AXIS = 1;
 	var    	Z_AXIS = 2;
 	
-Scene = function ( parameters ) {
+GFX.Scene = function ( parameters ) {
 	
-	this.scene;
-	this.renderer;
-	this.camera;
+	this.scene = null;
+	this.renderer = null;
+	this.camera = null;
+    this.containerID = null;
+
+	this.canvasWidth = 0;
+	this.canvasHeight = 0;
+
+	this.cameraPos = [0,20,40];
 
 	this.controls = false;
-	this.orbitControls;
+	this.orbitControls = null;
 
 	this.displayStats = false;
-	this.stats;
+	this.stats = null;
 
-	this.ambientLight;
-	this.directionalLight;
+	this.ambientLight = null;
+	this.directionalLight = null;
 
-	this.axisHeight = 0;
+	this.axesHeight = 0;
 	
 	this.floorRepeat = 0;
+	this.floorX      = 0;
+	this.floorZ      = 0;
+    this.floorImage  = null;
 	
 	this.fogType = 'none';	// else 'linear' or 'exponential' 
 	this.fogDensity = 0;
@@ -28,12 +43,14 @@ Scene = function ( parameters ) {
 	this.fogNear = 0.015;
 	this.fogFar = 100;
 
-	this.setParameters( parameters );
+    this.setParameters( parameters );
+
+    this.initialize();
 };
 
 // the scene's parameters from the values JSON object
 // lifted from MrDoob's implementation in three.js
-Scene.prototype = {
+GFX.Scene.prototype = {
 		
 	setParameters: function( values ) {
 
@@ -53,14 +70,20 @@ Scene.prototype = {
 	
 				if ( currentValue instanceof THREE.Color ) {
 					currentValue.set( newValue );
-				} else if ( currentValue instanceof THREE.Vector3 && newValue instanceof THREE.Vector3 ) {
+				}
+                else if ( currentValue instanceof THREE.Vector3 && newValue instanceof THREE.Vector3 ) {
 					currentValue.copy( newValue );
-				} else if ( key == 'overdraw' ) {
+				}
+                else if ( key == 'overdraw' ) {
 					// ensure overdraw is backwards-compatible with legacy boolean type
 					this[ key ] = Number( newValue );
-				} else {
-					this[ key ] = newValue;
 				}
+                else if (currentValue instanceof Array) {
+                    this[ key ] = newValue.slice();
+				}
+                else {
+                    this[ key ] = newValue;
+                }
 			}
 		}
 	},
@@ -74,19 +97,28 @@ Scene.prototype = {
 
 		this.addFog();
 		
-		//this.scene.fog = new THREE.Fog( 0xffffff,  0.015, 100 );
-		//this.scene.fog = this.scene.fog = new THREE.FogExp2( 0xffffff, 0.15 );
-			 
+		// If the user didn't supply a fixed size for the window,
+		// get the size of the inner window (content area)
+		if (this.canvasHeight == 0) {
+			this.canvasWidth = window.innerWidth;
+			this.canvasHeight = window.innerHeight;
 
-		// Get the size of the inner window (content area)
-		var canvasWidth = window.innerWidth;
-		var canvasHeight = window.innerHeight;
+            var _self = this;
+
+			// add an event listener to handle changing the size of the window
+			window.addEventListener('resize', function() {
+                _self.canvasWidth  = window.innerWidth;
+                _self.canvasHeight = window.innerHeight;
+                _self.renderer.setSize( _self.canvasWidth, _self.canvasHeight );
+                _self.camera.aspect = _self.canvasWidth / _self.canvasHeight;
+                _self.camera.updateProjectionMatrix();
+            });
+		}
 	
 		// if the caller supplied the container elm ID try to find it
 		var container;
-		var containerID;
-		if (containerID != null && typeof containerID != 'undefined')
-			container = document.getElementById(containerID);
+		if (this.containerID != null && typeof this.containerID != 'undefined')
+			container = document.getElementById(this.containerID);
 		
 		// couldn't find it, so create it ourselves
 		if (container == null || typeof container == 'undefined') {
@@ -94,13 +126,17 @@ Scene.prototype = {
 			document.body.appendChild( container );
 		}
 		else {
-			canvasWidth = container.clientWidth;
-			canvasHeight = container.clientHeight;
+			this.canvasWidth = container.clientWidth;
+			this.canvasHeight = container.clientHeight;
 		}
 	
 		// set up the camera
-		this.camera = new THREE.PerspectiveCamera(45, canvasWidth / canvasHeight, 0.1, 1000);
-		this.camera.position.set(0, 6, 6);
+		this.camera = new THREE.PerspectiveCamera(45, this.canvasWidth / this.canvasHeight, 0.1, 5000);
+		if (this.cameraPos == undefined)
+			this.camera.position.set(0, 10, 20);
+		else
+			this.camera.position.set(this.cameraPos[0], this.cameraPos[1], this.cameraPos[2]);
+
 		this.camera.lookAt(this.scene.position);
 		this.scene.add(this.camera);
 	
@@ -111,7 +147,7 @@ Scene.prototype = {
 		this.renderer.setClearColor(0x000000, 1);
 	
 		// Set the renderers size to the content areas size
-		this.renderer.setSize(canvasWidth, canvasHeight);
+		this.renderer.setSize(this.canvasWidth, this.canvasHeight);
 	
 		// Get the DIV element from the HTML document by its ID and append the renderer's DOM object
 		container.appendChild(this.renderer.domElement);
@@ -136,8 +172,8 @@ Scene.prototype = {
 		if (this.controls == true)
 			this.orbitControls = new THREE.OrbitControls( this.camera, this.renderer.domElement );
 		
-		if ( this.axisHeight != 0 )
-			this.drawAxes(this.axisHeight);
+		if ( this.axesHeight != 0 )
+			this.drawAxes(this.axesHeight);
 		
 		if (this.floorRepeat != 0)
 			this.addFloor(this.floorRepeat);
@@ -153,7 +189,7 @@ Scene.prototype = {
 		}
 	},
 
-	addToScene: function ( obj ) {
+	add: function ( obj ) {
 		this.scene.add(obj);
 	},
 
@@ -166,17 +202,6 @@ Scene.prototype = {
  */
 	renderScene: function() {
 		
-		//this.scene.fog = new THREE.FogExp2( Math.random() * 0xfffff, 0.1, 0.01, 100);
-		/*
-		 * if (this.fogType == 'exponential')
-			
-			this.scene.fog = new THREE.FogExp2(this.fogColor, this.fogDensity, this.fogNear, this.fogFar );
-		else if (this.fogType == 'linear')
-			this.scene.fog = new THREE.Fog( this.fogColor, this.fogNear, this.fogFar );
-		else
-			this.scene.fog = null;
-			*/
-		
 		this.renderer.render(this.scene, this.camera);
 
 		// the orbit controls, if used, have to be updated as well
@@ -186,7 +211,7 @@ Scene.prototype = {
 		if (this.stats != null && typeof this.stats != 'undefined') 
 			this.stats.update();
 
-},
+	},
 
 	addFog: function( values ) {
 		
@@ -227,13 +252,17 @@ Scene.prototype = {
 	addFloor: function( floorRepeat ) {
 		
 		// note: 4x4 checker-board pattern scaled so that each square is 25 by 25 pixels.
-		var floorTexture = new THREE.ImageUtils.loadTexture( '../images/checkerboard.jpg' );
-		floorTexture.wrapS = floorTexture.wrapT = THREE.RepeatWrapping; 
-		floorTexture.repeat.set( floorRepeat, floorRepeat );
+        var image = this.floorImage == null ? '../images/checkerboard.jpg' : this.floorImage;
+		var texture = new THREE.ImageUtils.loadTexture( image );
+		texture.wrapS = texture.wrapT = THREE.RepeatWrapping;
+		texture.repeat.set( this.floorRepeat, this.floorRepeat );
 		
 		// DoubleSide: render texture on both sides of mesh
-		var floorMaterial = new THREE.MeshBasicMaterial( { map: floorTexture, side: THREE.DoubleSide } );
-		var floorGeometry = new THREE.PlaneGeometry(50, 50, 1, 1);
+		var floorMaterial = new THREE.MeshBasicMaterial( { map: texture, side: THREE.DoubleSide } );
+        var width = this.floorX == 0 ? 10 : this.floorX;
+        var height = this.floorZ == 0 ? 10 : this.floorZ;
+
+        var floorGeometry = new THREE.PlaneGeometry(width, height, 1, 1);
 		var floor = new THREE.Mesh(floorGeometry, floorMaterial);
 		floor.position.y = 0.0;
 		floor.rotation.x = Math.PI / 2;
@@ -287,7 +316,7 @@ Scene.prototype = {
 			}
 			
 			this.scene.add( cylinder );
-		};
+		}
 	},
 
 	drawAxes: function( height ) {
@@ -296,4 +325,4 @@ Scene.prototype = {
 		this.drawAxis(Y_AXIS, 0x00ff00, height);
 		this.drawAxis(Z_AXIS, 0x0000ff, height);
 	}
-}
+};
