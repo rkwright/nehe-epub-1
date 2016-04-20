@@ -109,7 +109,7 @@
 }</code></pre>
 
 <p></p>
-<p>Note also that have a short function to resize the canvas if the user changes the size of the enclosing container. Also not the little trick with <span class="inline-code">var=_self</span> (thank you, Stackoverflow). This is needed since &quot;this&quot; references the local object, which in the event-handler is the event-handler itself, not our <span class="inline-code">gfxScene</span> class.</p>
+<p>Note also that have a short function to resize the canvas if the user changes the size of the enclosing container. Also note the little trick with <span class="inline-code">var=_self</span> (thank you, Stackoverflow). This is needed since &quot;this&quot; references the local object, which in the event-handler is the event-handler itself, not our <span class="inline-code">gfxScene</span> class.</p>
 <p>Then we check if the user supplied a container ID in which to host our scene. If they didn't supply a container (or we couldn't find it) then we simply create one and append it to the body element of the HTML. If they DID supply one, we update the canvas size with the dimensions of that container.</p>
 
 <pre><code class="language-javascript">var container;
@@ -168,6 +168,7 @@ this.scene.add(this.pointLight);</code>
 <pre><code class="language-javascript">var gfxScene = new GFX.Scene( { cameraPos:[0,0,6] });</code></pre>
 
 <p>Then we set up the variables (same as lesson 7) then call <span class="inline-code">initializeDemo()</span>. We call it initialize <em><strong>demo</strong></em> because we don't need to initialize the scene anymore - we can concentrate solely on the demo itself. So let's look at <span class="inline-code">initializeDemo</span>.</p>
+<p>The real crux of this demo is in the instantiation of the cube, particularly the material. We specify that the &quot;mapped&quot; texture is our glass texture.  Then we specify that the transparency is &quot;true&quot;. If this is not specified, nothing will be blended, the cube will be just opaque, even if the opacity is set to less than one and the &quot;combine&quot; property is set to something other than &quot;multiply&quot;. In fact, it is a little more complex than that, but explaining that is beyond the scope of this lesson. Suffice to say, we set the opacity to less than one and the &quot;combine&quot; property to THREE.MixOperation, which results in blending the foreground with the background.</p>
 
 <pre><code class="language-javascript">var cubeGeometry = new THREE.BoxGeometry(2.0, 2.0, 2.0);
 				
@@ -186,7 +187,6 @@ cubeMesh = new THREE.Mesh(cubeGeometry, cubeMaterial);
 cubeMesh.position.set(0.0, 0.0, zTranslation);
 gfxScene.add(cubeMesh);</code></pre>
 
-<p>&nbsp;</p>
 <p>And that's it!  Go on to the next page to see the actual rendered demo in all its blended glory!</p>
 </body>
 </html>

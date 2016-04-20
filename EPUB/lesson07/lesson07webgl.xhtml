@@ -45,7 +45,7 @@
 		<div id="WebGLCanvas"/>
 
 		<!-- This JavaScript block encloses the Three.js commands -->
-		<script> //<![CDATA[
+		<script> <![CDATA[
 			// Global scene object
 			var scene;
 
@@ -148,7 +148,7 @@
 				// ... aspect ratio (usually set to the quotient of canvas width to canvas height)
 				// ... near and
 				// ... far.
-				// Near and far define the cliping planes of the view frustum. Three.js provides an
+				// Near and far define the clipping planes of the view frustum. Three.js provides an
 				// example (http://mrdoob.github.com/three.js/examples/
 				// -> canvas_camera_orthographic2.html), which allows to play around with these
 				// parameters.
@@ -168,10 +168,6 @@
 				wallTexture = new THREE.ImageUtils.loadTexture("images/StoneWall-"+textureSize+".png");
 
 				// Create a material, which contains the texture.
-				// Unfortunately, the CanvasRenderer doesn't support MeshLambertMaterial in combination
-				// with Textures. Otherwise, the MeshBasicMaterial doesn't support lighting. As
-				// compromise, the CanvasRenderer will show the texture without lighting via
-				// MeshBasicMaterial.
 				// Activate the 'doubleSided' attribute to force the rendering of both sides of each
 				// face (front and back). This prevents the so called 'backface culling'. Usually,
 				// only the side is rendered, whose normal vector points towards the camera. The other
@@ -307,7 +303,7 @@
 			function renderScene(){
 				renderer.render(scene, camera);
 			}
-		//]]> </script>
+		]]> </script>
 
 	</body>
 </html>

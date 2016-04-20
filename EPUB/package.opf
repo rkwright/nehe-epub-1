@@ -7,7 +7,7 @@
         <dc:creator>Ric Wright</dc:creator>
         <dc:publisher>Geo-F/X</dc:publisher>
  		<dc:date>2016-02-12T20:21:44Z</dc:date>
-   	    <meta property="dcterms:modified">2016-03-30T13:17:23Z</meta>
+   	    <meta property="dcterms:modified">2016-04-20T13:36:24Z</meta>
 		<dc:language>en-US</dc:language>
 		<dc:identifier id="bookid">urn:uuid:29d919dd-24f5-4384-be78-b447c9dc299b</dc:identifier>
 		<!--layout options-->
@@ -26,6 +26,12 @@
  		<item id="StoneWall-1024" href="lesson07/images/StoneWall-1024.png" media-type="image/png" />
  		<item id="Glass" href="lesson08/images/Glass.jpg" media-type="image/jpg" />
  		<item id="star" href="lesson09/images/star.jpg" media-type="image/jpg" />
+		<item id="mud" href="lesson10/Data/Mud.png" media-type="image/png" />
+		<item id="sammy" href="lesson10/Data/Sammy.jpg" media-type="image/jpg" />
+		<item id="tim" href="lesson11/images/Tim.bmp" media-type="image/bmp" />
+		<item id="leather" href="lesson15/images/green-pebbled-leather.jpg" media-type="image/jpg" />
+		<item id="wood" href="lesson15/images/wood-grain.jpg" media-type="image/jpg" />
+		<item id="create" href="lesson16/images/Crate.jpg" media-type="image/jpg" />
 
         <!-- svg -->
         <item id="opengl-square" href="svg/OpenGL-Square.svg" media-type="image/svg+xml" />
@@ -40,9 +46,10 @@
  		<item id="threejs" href="js/three.js" media-type="text/javascript"/>
  		<item id="jquery" href="js/jquery-1.9.1.js" media-type="text/javascript"/>
   		<item id="OrbitControls" href="js/OrbitControls-Touch.js" media-type="text/javascript"/>
- 		<item id="Scene" href="js/Scene.js" media-type="text/javascript"/>
+ 		<item id="gfxScene" href="js/gfx-scene.js" media-type="text/javascript"/>
  		<item id="Stats" href="js/Stats.js" media-type="text/javascript"/>
-		<item id="prism-s" href="js/prism.js" media-type="text/javascript"/>
+		<item id="prism" href="js/prism.js" media-type="text/javascript"/>
+		<item id="world" href="lesson10/Data/World.js" media-type="text/javascript"/>
 
  		<!-- fonts-js -->	
  		<item id="gentilis-bold" href="fonts/gentilis_bold.typeface.js" media-type="text/javascript"/>		
@@ -78,6 +85,19 @@
 		<item id="lesson08-gl" href="lesson08/lesson08webgl.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
 		<item id="lesson09" href="lesson09/lesson09.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
 		<item id="lesson09-gl" href="lesson09/lesson09webgl.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
+		<item id="lesson10" href="lesson10/lesson10.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
+		<item id="lesson10-gl" href="lesson10/lesson10webgl.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
+		<item id="lesson11" href="lesson11/lesson11.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
+		<item id="lesson11-gl" href="lesson11/lesson11webgl.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
+		<item id="lesson12" href="lesson12/lesson12.xhtml" media-type="application/xhtml+xml"/>
+		<item id="lesson13" href="lesson13/lesson13.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
+		<item id="lesson13-gl" href="lesson13/lesson13webgl.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
+		<item id="lesson14" href="lesson14/lesson14.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
+		<item id="lesson14-gl" href="lesson14/lesson14webgl.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
+		<item id="lesson15" href="lesson15/lesson15.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
+		<item id="lesson15-gl" href="lesson15/lesson15webgl.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
+		<item id="lesson16" href="lesson16/lesson16.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
+		<item id="lesson16-gl" href="lesson16/lesson16webgl.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
 	</manifest>
 	<spine>
 		<itemref idref="coverpage" />
@@ -101,6 +121,19 @@
 		<itemref idref="lesson08-gl" properties="rendition:layout-pre-paginated"/>
 		<itemref idref="lesson09" />
 		<itemref idref="lesson09-gl" properties="rendition:layout-pre-paginated"/>
+		<itemref idref="lesson10" />
+		<itemref idref="lesson10-gl" properties="rendition:layout-pre-paginated"/>
+		<itemref idref="lesson11" />
+		<itemref idref="lesson11-gl" properties="rendition:layout-pre-paginated"/>
+		<itemref idref="lesson12" />
+		<itemref idref="lesson13" />
+		<itemref idref="lesson13-gl" properties="rendition:layout-pre-paginated"/>
+		<itemref idref="lesson14" />
+		<itemref idref="lesson14-gl" properties="rendition:layout-pre-paginated"/>
+		<itemref idref="lesson15" />
+		<itemref idref="lesson15-gl" properties="rendition:layout-pre-paginated"/>
+		<itemref idref="lesson16" />
+		<itemref idref="lesson16-gl" properties="rendition:layout-pre-paginated"/>
 		<itemref idref="colophon"/>
 	</spine>
 </package>

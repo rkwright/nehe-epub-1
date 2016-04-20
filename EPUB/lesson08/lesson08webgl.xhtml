@@ -31,9 +31,11 @@
 
 
 		<!-- This JavaScript block encloses the Three.js commands -->
-		<script type="text/javascript">
+		<script type="text/javascript"> <![CDATA[
             // allocate the Scene object, and set the camera position
-            var gfxScene = new GFX.Scene( { cameraPos:[0,0,6] });
+            var gfxScene = new GFX.Scene( { cameraPos:[0,0,6],
+            	canvasWidth : 768,
+            	canvasHeight : 1024});
 
 			// x and y rotation
 			var xRotation = 0.0;
@@ -153,6 +155,9 @@
                 else if(keyCode == 34) {        // Page down
 					zTranslation += 0.2;
 				}
+
+				// need to stop propagation of the event or the Reading System will probably take back the focus
+				event.stopPropagation();
 			}
 
 			/**
@@ -188,6 +193,6 @@
                 gfxScene.renderScene();
 			}
 
-		</script>
+		]]> </script>
 	</body>
 </html>

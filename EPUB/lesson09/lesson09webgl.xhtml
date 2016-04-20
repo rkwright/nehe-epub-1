@@ -7,47 +7,26 @@
 		<!-- The following meta line optimizes the site for mobile devices. It sets the viewport size
 		to the screen size, so it will be displayed maximized, but unscaled. -->
 		<meta name="viewport" content="width=768, height=1024"/>
-		<style type="text/css">
-			body {
-				/* Set the background color of the HTML page to black */
-				background-color: #000000;
+		<link rel="stylesheet" type="text/css" href="../css/NeHe.css" />
 
-				/* Hide oversized content. This prevents the scroll bars. */
-				overflow: hidden;
-			}
-		</style>
-		<!-- Include two libraries
-		1. Three.js (core library)
-		2. Detector.js (checks the browsers WebGL capabilities) -->
+		<!-- Include the needed libs -->
 		<script src="../js/three.js"></script>
 		<script src="../js/Detector.js"></script>
+		<script src="../js/gfx-scene.js" type="text/javascript"></script>
 	</head>
 	<body>
-		<!-- This is the DIV element which will contain the WebGL canvas. To be identifiable later on,
-		the id 'WebGLCanvas' is applied to it. -->
-		<div id="WebGLCanvas">
-		</div>
-
 		<!-- This JavaScript block encloses the Three.js commands -->
-		<script> //<![CDATA[
-			// Global scene object
-			var scene;
-
-			// Global camera object
-			var camera;
-
-			// Texture
-			var starTexture;
-
-			// Global mesh object of the cube
-			var cubeMesh;
+		<script> <![CDATA[
+			// allocate the Scene object, and set the camera position
+			var gfxScene = new GFX.Scene( { cameraPos:[0,0,15],
+				canvasWidth : 768,
+				canvasHeight : 1024 });
 
 			var num = 32;
 			var star = new Array(num);
-			var spin = 0;
 
 			// Initialize the scene
-			initializeScene();
+			initializeDemo();
 
 			// Animate the scene
 			animateScene();
@@ -55,73 +34,15 @@
 			/**
 			 * Initialze the scene.
 			 */
-			function initializeScene(){
-				// Check whether the browser supports WebGL. If so, instantiate the hardware accelerated
-				// WebGL renderer. For antialiasing, we have to enable it. The canvas renderer uses
-				// antialiasing by default.
-				// The approach of multiplse renderers is quite nice, because your scene can also be
-				// viewed in browsers, which don't support WebGL. The limitations of the canvas renderer
-				// in contrast to the WebGL renderer will be explained in the tutorials, when there is a
-				// difference.
-				webGLAvailable = false;
-				if(Detector.webgl){
-					renderer = new THREE.WebGLRenderer({antialias:true});
-					webGLAvailable = true;
-
-				// If its not supported, instantiate the canvas renderer to support all non WebGL
-				// browsers
-				} else {
-					renderer = new THREE.CanvasRenderer();
-				}
-
-				// Set the background color of the renderer to black, with full opacity
-				renderer.setClearColor(0x000000, 1);
-
-				// Get the size of the inner window (content area)
-				// Reduce the canvas size a little bit to prevent scrolling the whole window
-				// content in Firefox while rotating the cube with the keys.
-				canvasWidth = 768;
-				canvasHeight = 1024;
-
-				// Set the renderers size to the content areas size
-				renderer.setSize(canvasWidth, canvasHeight);
-
-				// Get the DIV element from the HTML document by its ID and append the renderers DOM
-				// object to it
-				document.getElementById("WebGLCanvas").appendChild(renderer.domElement);
-
-				// Create the scene, in which all objects are stored (e. g. camera, lights,
-				// geometries, ...)
-				scene = new THREE.Scene();
-
-				// Now that we have a scene, we want to look into it. Therefore we need a camera.
-				// Three.js offers three camera types:
-				//  - PerspectiveCamera (perspective projection)
-				//  - OrthographicCamera (parallel projection)
-				//  - CombinedCamera (allows to switch between perspective / parallel projection
-				//    during runtime)
-				// In this example we create a perspective camera. Parameters for the perspective
-				// camera are ...
-				// ... field of view (FOV),
-				// ... aspect ratio (usually set to the quotient of canvas width to canvas height)
-				// ... near and
-				// ... far.
-				// Near and far define the cliping planes of the view frustum. Three.js provides an
-				// example (http://mrdoob.github.com/three.js/examples/
-				// -> canvas_camera_orthographic2.html), which allows to play around with these
-				// parameters.
-				// The camera is moved 10 units towards the z axis to allow looking to the center of
-				// the scene.
-				// After definition, the camera has to be added to the scene.
-				camera = new THREE.PerspectiveCamera(45, canvasWidth / canvasHeight, 1, 100);
-				camera.position.set(0, 0, 20);
-				camera.lookAt(scene.position);
-				scene.add(camera);
+			function initializeDemo() {
 
 				// Load an image as texture
-				starTexture = new THREE.ImageUtils.loadTexture("images/star.jpg");
+				var starTexture = new THREE.ImageUtils.loadTexture("images/star.jpg");
 
-				for (i = 0; i < num; i++){
+				for ( var i = 0; i < num; i++){
+					// Create a square mesh to hold the image. As in the first lesson,
+                    // we have to use two triangles and ensure the winding directions
+                    // are correct
 					var squareGeometry = new THREE.Geometry();
 					squareGeometry.vertices.push(new THREE.Vector3(-1, -1, 0));
 					squareGeometry.vertices.push(new THREE.Vector3( 1, -1, 0));
@@ -158,7 +79,7 @@
 
 					var squareMesh = new THREE.Mesh(squareGeometry, squareMaterial);
 					squareMesh.position.set(0.0, 0.0, 0.0);
-					scene.add(squareMesh);
+					gfxScene.add(squareMesh);
 
 					// note that the rgb color values must be in the range of 0..1 or the Color 
 					// object will just clamp them to 1, i.e. white
@@ -177,17 +98,17 @@
 			 */
 			function animateScene()
 			{
-				// Define the function, which is called by the browser supported timer loop. If the
-				// browser tab is not visible, the animation is paused. So 'animateScene()' is called
-				// in a browser controlled loop.
+				// Tell the browser to call this routine at the next opportunity
 				requestAnimationFrame(animateScene);
 
 				// Now loop through the stars and update their positions, spin and color
-				for(i = 0; i < num; i++) {
-					spin          += Math.PI * 2 / num;
+				var spin = 0;
+				for ( var i = 0; i < num; i++ ) {
+					spin += Math.PI * 2 / num;
 					if (spin > (Math.PI*2))
 							spin = 0;
-									
+
+                    // make the stars spiral inward as they spin
 					star[i].angle += i / num;
 					star[i].dist  -= 0.01;
 					if(star[i].dist < 0.0) {
@@ -203,7 +124,7 @@
 					// we want to translate the star out to the right distance and the rotate it 
 					// around the z-axis so we set the mesh's matrix to that translated value
 					// then rotate a second matrix and concatenate it onto the mesh's matrix.					
-					star[i].mesh.matrix.setPosition(new THREE.Vector3(star[i].dist,0, 0));					
+					star[i].mesh.matrix.setPosition(new THREE.Vector3(star[i].dist, 0, 0));
 					var mr = new THREE.Matrix4();
 					mr.makeRotationZ(spin);
 					star[i].mesh.applyMatrix(mr);
@@ -213,15 +134,8 @@
 				}
 
 				// Map the 3D scene down to the 2D screen (render the frame)
-				renderScene();
+				gfxScene.renderScene();
 			}
-
-			/**
-			 * Render the scene. Map the 3D world to the 2D screen.
-			 */
-			function renderScene(){
-				renderer.render(scene, camera);
-			}
-		//]]> </script>
+		]]> </script>
 	</body>
 </html>
