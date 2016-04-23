@@ -55,8 +55,11 @@ squareGeometry.faceVertexUvs[0].push([
     new THREE.Vector2(0.0, 0.0),
     new THREE.Vector2(1.0, 1.0),
     new THREE.Vector2(0.0, 1.0)
-]);</code></pre>
+]);</code>
+</pre>
 					
+<p>For an excellent intro to texture/UV mapping, see
+<a href="http://solutiondesign.com/webgl-and-three-js-texture-mapping">http://solutiondesign.com/webgl-and-three-js-texture-mapping</a></p>
 <p>Then we create a material, which contains the texture. We use <span class="inline-code">AdditiveBlending</span> and <span class="inline-code">transparency:true</span> so that the black areas of the image become transparent. We also set the <span class="inline-code">combine</span> property to 
   <span class="inline-code">MixOperation</span> so the color we specify gets combined with white parts of the image. We set the initial 
 color of each to white, but that gets changed when we animate the stars.</p>
