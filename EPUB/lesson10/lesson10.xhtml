@@ -31,7 +31,7 @@
 <pre><code class="language-javascript">var texture = new THREE.ImageUtils.loadTexture("Data/Sammy.jpg");
 var material = new THREE.MeshBasicMaterial( { map: texture, side:THREE.DoubleSide } );</code></pre>
 
-<p>The JS array is then simply read via link and automatically instantiated. The number of triangles is computed from the length of the array. Then the code simply loops through the array fetching three rows at a time (being the three verticies) and creates a plain <span class="inline-code">Geometry</span> and pushes the verticies into it, creating a triangular mesh.</p>
+<p>The JS array is then simply read via a link and automatically instantiated. The number of triangles is computed from the length of the array. Then the code simply loops through the array fetching three rows at a time (being the three verticies) and creates a plain <span class="inline-code">Geometry</span> and pushes the verticies into it, creating a triangular mesh.</p>
 			
 <pre><code class="language-javascript">var i1 = i * 3;
 var i2 = i * 3 + 1;
@@ -42,7 +42,7 @@ triGeom.vertices.push(new THREE.Vector3(world[i1][V_X],world[i1][V_Y],world[i1][
 triGeom.vertices.push(new THREE.Vector3(world[i2][V_X],world[i2][V_Y],world[i2][V_Z]));
 triGeom.vertices.push(new THREE.Vector3(world[i3][V_X],world[i3][V_Y],world[i3][V_Z]));</code></pre>
 
-<p>Create a new Face3, whose indices point into the vertices we created above</p>
+<p>Create a new <span class="inline-code">Face3</span>, whose indices point into the vertices we created above</p>
 
 <pre><code class="language-javascript">triGeom.faces.push( new THREE.Face3( 0, 1, 2 ) );</code></pre>
 
