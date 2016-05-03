@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f5511974-615e-45db-a977-796aafaa665e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EPUB/css/NeHe-EPUB.css" afterPath="$PROJECT_DIR$/EPUB/css/NeHe-EPUB.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EPUB/lesson13/lesson13.xhtml" afterPath="$PROJECT_DIR$/EPUB/lesson13/lesson13.xhtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EPUB/lesson14/lesson14.xhtml" afterPath="$PROJECT_DIR$/EPUB/lesson14/lesson14.xhtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EPUB/package.opf" afterPath="$PROJECT_DIR$/EPUB/package.opf" />
     </list>
     <ignored path="Sandbox-NeHe-EPUB.iws" />
@@ -92,8 +91,8 @@
           <file leaf-file-name="toc.xhtml" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/EPUB/frontmatter/toc.xhtml">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="885">
-                  <caret line="62" column="71" selection-start-line="62" selection-start-column="71" selection-end-line="62" selection-end-column="71" />
+                <state relative-caret-position="453">
+                  <caret line="35" column="57" selection-start-line="35" selection-start-column="57" selection-end-line="35" selection-end-column="57" />
                   <folding />
                 </state>
               </provider>
@@ -863,12 +862,12 @@
       <workItem from="1460816323944" duration="372000" />
       <workItem from="1460907556690" duration="1194000" />
       <workItem from="1461072771511" duration="7573000" />
-      <workItem from="1461341253257" duration="11049000" />
+      <workItem from="1461341253257" duration="11185000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29227000" />
+    <option name="totallyTimeSpent" value="29363000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="40" y="23" width="2498" height="1417" extended-state="0" />
@@ -1292,8 +1291,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/EPUB/frontmatter/toc.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="885">
-          <caret line="62" column="71" selection-start-line="62" selection-start-column="71" selection-end-line="62" selection-end-column="71" />
+        <state relative-caret-position="453">
+          <caret line="35" column="57" selection-start-line="35" selection-start-column="57" selection-end-line="35" selection-end-column="57" />
           <folding />
         </state>
       </provider>
