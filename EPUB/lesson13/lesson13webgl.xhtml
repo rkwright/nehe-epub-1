@@ -25,9 +25,6 @@
 <script> <![CDATA[
 	//custom global variables
 	var cube;
-	var projector, mouse = { x: 0, y: 0 }, INTERSECTED;
-	var sprite1;
-	var canvas1, context1, texture1;
 	var DESCENDER_ADJUST = 1.28;
 
 	// allocate the Scene object, request orbitControls, 3D axes 10 units high and the stats
@@ -35,7 +32,7 @@
         cameraPos : [5, 2, 8],
         canvasWidth : 768,
 		canvasHeight : 1024,
-		axisHeight:10,
+		axesHeight:10,
 		controls:true,
 		displayStats:true });
 
