@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f5511974-615e-45db-a977-796aafaa665e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EPUB/frontmatter/toc.xhtml" afterPath="$PROJECT_DIR$/EPUB/frontmatter/toc.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EPUB/lesson11/lesson11.xhtml" afterPath="$PROJECT_DIR$/EPUB/lesson11/lesson11.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EPUB/lesson12/lesson12.xhtml" afterPath="$PROJECT_DIR$/EPUB/lesson12/lesson12.xhtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EPUB/css/NeHe-EPUB.css" afterPath="$PROJECT_DIR$/EPUB/css/NeHe-EPUB.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EPUB/lesson13/lesson13.xhtml" afterPath="$PROJECT_DIR$/EPUB/lesson13/lesson13.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EPUB/lesson13/lesson13webgl.xhtml" afterPath="$PROJECT_DIR$/EPUB/lesson13/lesson13webgl.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EPUB/lesson14/lesson14.xhtml" afterPath="$PROJECT_DIR$/EPUB/lesson14/lesson14.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EPUB/lesson15/lesson15.xhtml" afterPath="$PROJECT_DIR$/EPUB/lesson15/lesson15.xhtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EPUB/package.opf" afterPath="$PROJECT_DIR$/EPUB/package.opf" />
     </list>
     <ignored path="Sandbox-NeHe-EPUB.iws" />
@@ -869,12 +863,12 @@
       <workItem from="1460816323944" duration="372000" />
       <workItem from="1460907556690" duration="1194000" />
       <workItem from="1461072771511" duration="7573000" />
-      <workItem from="1461341253257" duration="10501000" />
+      <workItem from="1461341253257" duration="11049000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28679000" />
+    <option name="totallyTimeSpent" value="29227000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="40" y="23" width="2498" height="1417" extended-state="0" />

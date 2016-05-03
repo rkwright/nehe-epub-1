@@ -8,7 +8,7 @@
     <meta charset="utf-8"/>
 </head>
 <body>
-<h2>Lesson 13 - Bitmapped Fonts and  Canvas 2d</h2>
+<h2>Lesson 13 - Bitmap Fonts and  Canvas 2d</h2>
 
 
 <p>Lesson 13 in NeHe is about using bitmapped fonts. This was important in the old days because support for vector fonts was very limited. For a long time, only Windows supported vector fonts (via the infamous &quot;wgl&quot; functions, so named because they were all prefixed with <em>wgl</em>). So being able to render text via bitmap fonts was actually important. Lesson 13 showed how to paint text on the screen via function glPrint, whch wrapped the wgl functions.</p>
@@ -51,8 +51,9 @@ gfxScene.add(cube);</code></pre>
 </ul>
 <p>Here is one call as an example</p>
 
-<pre><code class="language-javascript">var txSprite1 = makeTextSprite( "Bottom-Right", -1, 1, 0.25, { fontsize: 72, fontface: "Georgia", 
-            borderColor: {r:0, g:0, b:255, a:1.0}, borderThickness:4, fillColor: {r:255, g:255, b:255, a:1.0}, 
+<pre><code class="language-javascript">var txSprite1 = makeTextSprite( "Bottom-Right", -1, 1, 0.25, { fontsize: 72, 
+            fontface: "Georgia", borderColor: {r:0, g:0, b:255, a:1.0}, 
+            borderThickness:4, fillColor: {r:255, g:255, b:255, a:1.0}, 
             radius:0, vAlign:"bottom", hAlign:"right" } );
 gfxScene.add( txSprite1 );</code></pre>
 
