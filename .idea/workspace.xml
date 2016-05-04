@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f5511974-615e-45db-a977-796aafaa665e" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EPUB/js/gfx-scene.js" afterPath="$PROJECT_DIR$/EPUB/js/gfx-scene.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EPUB/lesson14/lesson14.xhtml" afterPath="$PROJECT_DIR$/EPUB/lesson14/lesson14.xhtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EPUB/lesson15/lesson15.xhtml" afterPath="$PROJECT_DIR$/EPUB/lesson15/lesson15.xhtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EPUB/lesson15/lesson15webgl.xhtml" afterPath="$PROJECT_DIR$/EPUB/lesson15/lesson15webgl.xhtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EPUB/package.opf" afterPath="$PROJECT_DIR$/EPUB/package.opf" />
     </list>
     <ignored path="Sandbox-NeHe-EPUB.iws" />
@@ -88,7 +91,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="toc.xhtml" pinned="false" current-in-tab="true">
+          <file leaf-file-name="toc.xhtml" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/EPUB/frontmatter/toc.xhtml">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="453">
@@ -98,21 +101,37 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="lesson16webgl.xhtml" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/EPUB/lesson16/lesson16webgl.xhtml">
+          <file leaf-file-name="gfx-scene.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/EPUB/js/gfx-scene.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="208">
-                  <caret line="13" column="54" selection-start-line="13" selection-start-column="54" selection-end-line="13" selection-end-column="54" />
+                <state relative-caret-position="880">
+                  <caret line="185" column="56" selection-start-line="185" selection-start-column="56" selection-end-line="185" selection-end-column="56" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="lesson14webgl.xhtml" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/EPUB/lesson14/lesson14webgl.xhtml">
+          <file leaf-file-name="lesson15webgl.xhtml" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/EPUB/lesson15/lesson15webgl.xhtml">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="240">
-                  <caret line="15" column="72" selection-start-line="15" selection-start-column="72" selection-end-line="15" selection-end-column="72" />
+                <state relative-caret-position="-315">
+                  <caret line="50" column="29" selection-start-line="50" selection-start-column="29" selection-end-line="50" selection-end-column="29" />
+                  <folding>
+                    <marker date="1462367454000" expanded="true" signature="1249:1403" placeholder="/** Multiply each vertex by the model-view matrix and the projection ...*/" />
+                    <marker date="1462367454000" expanded="true" signature="1419:1688" placeholder="{...}" />
+                    <marker date="1462367454000" expanded="true" signature="1430:1571" placeholder="//..." />
+                    <marker date="1462367454000" expanded="true" signature="1981:2037" placeholder="{...}" />
+                    <marker date="1462367454000" expanded="true" signature="2262:2321" placeholder="{...}" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="lesson15.xhtml" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/EPUB/lesson15/lesson15.xhtml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="928">
+                  <caret line="79" column="103" selection-start-line="79" selection-start-column="103" selection-end-line="79" selection-end-column="103" />
                   <folding />
                 </state>
               </provider>
@@ -173,7 +192,6 @@
         <option value="$PROJECT_DIR$/EPUB/lesson07/lesson07.xhtml" />
         <option value="$PROJECT_DIR$/EPUB/lesson08/lesson08.xhtml" />
         <option value="$PROJECT_DIR$/EPUB/lesson07/lesson07webgl.xhtml" />
-        <option value="$PROJECT_DIR$/EPUB/lesson15/lesson15webgl.xhtml" />
         <option value="$PROJECT_DIR$/EPUB/lesson08/lesson08webgl.xhtml" />
         <option value="$PROJECT_DIR$/EPUB/lesson12/lesson12.xhtml" />
         <option value="$PROJECT_DIR$/EPUB/lesson14/lesson14webgl.xhtml" />
@@ -185,6 +203,9 @@
         <option value="$PROJECT_DIR$/EPUB/package.opf" />
         <option value="$PROJECT_DIR$/EPUB/lesson13/lesson13webgl.xhtml" />
         <option value="$PROJECT_DIR$/EPUB/frontmatter/toc.xhtml" />
+        <option value="$PROJECT_DIR$/EPUB/js/gfx-scene.js" />
+        <option value="$PROJECT_DIR$/EPUB/lesson15/lesson15webgl.xhtml" />
+        <option value="$PROJECT_DIR$/EPUB/lesson15/lesson15.xhtml" />
       </list>
     </option>
   </component>
@@ -754,10 +775,7 @@
       <recent name="$PROJECT_DIR$/EPUB/images" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.lesson11webgl.xhtml">
-    <configuration default="false" name="lesson05webgl.xhtml" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/NeHe-EPUB-1-16/EPUB/lesson05/lesson05webgl.xhtml">
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JavaScript Debug.lesson15webgl.xhtml">
     <configuration default="false" name="lesson07webgl.xhtml" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/NeHe-EPUB-1-16/EPUB/lesson07/lesson07webgl.xhtml">
       <method />
     </configuration>
@@ -768,6 +786,9 @@
       <method />
     </configuration>
     <configuration default="false" name="lesson11webgl.xhtml" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/NeHe-EPUB-1-16/EPUB/lesson11/lesson11webgl.xhtml">
+      <method />
+    </configuration>
+    <configuration default="false" name="lesson15webgl.xhtml" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/NeHe-EPUB-1-16/EPUB/lesson15/lesson15webgl.xhtml">
       <method />
     </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -824,19 +845,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.lesson05webgl.xhtml" />
-      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.lesson07webgl.xhtml" />
-      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.lesson08webgl.xhtml" />
-      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.lesson09webgl.xhtml" />
-      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.lesson11webgl.xhtml" />
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.lesson07webgl.xhtml" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.lesson08webgl.xhtml" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.lesson09webgl.xhtml" />
+      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.lesson11webgl.xhtml" />
+      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.lesson15webgl.xhtml" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.lesson11webgl.xhtml" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.lesson09webgl.xhtml" />
-        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.lesson08webgl.xhtml" />
-        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.lesson07webgl.xhtml" />
-        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.lesson05webgl.xhtml" />
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.lesson15webgl.xhtml" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.lesson11webgl.xhtml" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.lesson09webgl.xhtml" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.lesson08webgl.xhtml" />
+        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.lesson07webgl.xhtml" />
       </list>
     </recent_temporary>
   </component>
@@ -862,18 +883,18 @@
       <workItem from="1460816323944" duration="372000" />
       <workItem from="1460907556690" duration="1194000" />
       <workItem from="1461072771511" duration="7573000" />
-      <workItem from="1461341253257" duration="11185000" />
+      <workItem from="1461341253257" duration="14398000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29363000" />
+    <option name="totallyTimeSpent" value="32576000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="40" y="23" width="2498" height="1417" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.118494794" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.118494794" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -939,21 +960,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/EPUB/package.opf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="54" column="97" selection-start-line="54" selection-start-column="97" selection-end-line="54" selection-end-column="97" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EPUB/frontmatter/intro.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/EPUB/frontmatter/preface.xhtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1136,13 +1142,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/EPUB/js/Scene.js" />
-    <entry file="file://$PROJECT_DIR$/EPUB/js/gfx-scene.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/EPUB/lesson08/lesson08.xhtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2992">
@@ -1168,13 +1167,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
           <caret line="47" column="26" selection-start-line="47" selection-start-column="17" selection-end-line="47" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EPUB/lesson15/lesson15webgl.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="565">
-          <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1294,6 +1287,44 @@
         <state relative-caret-position="453">
           <caret line="35" column="57" selection-start-line="35" selection-start-column="57" selection-end-line="35" selection-end-column="57" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EPUB/js/gfx-scene.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="880">
+          <caret line="185" column="56" selection-start-line="185" selection-start-column="56" selection-end-line="185" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EPUB/js/three.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="554">
+          <caret line="32511" column="9" selection-start-line="32511" selection-start-column="9" selection-end-line="32511" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EPUB/lesson15/lesson15.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="928">
+          <caret line="79" column="103" selection-start-line="79" selection-start-column="103" selection-end-line="79" selection-end-column="103" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EPUB/lesson15/lesson15webgl.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-315">
+          <caret line="50" column="29" selection-start-line="50" selection-start-column="29" selection-end-line="50" selection-end-column="29" />
+          <folding>
+            <marker date="1462367454000" expanded="true" signature="1249:1403" placeholder="/** Multiply each vertex by the model-view matrix and the projection ...*/" />
+            <marker date="1462367454000" expanded="true" signature="1419:1688" placeholder="{...}" />
+            <marker date="1462367454000" expanded="true" signature="1430:1571" placeholder="//..." />
+            <marker date="1462367454000" expanded="true" signature="1981:2037" placeholder="{...}" />
+            <marker date="1462367454000" expanded="true" signature="2262:2321" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>

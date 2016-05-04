@@ -183,7 +183,7 @@ GFX.Scene.prototype = {
 		if (this.displayStats == true) {
 			this.stats = new Stats();
 			this.stats.domElement.style.position = 'absolute';
-			this.stats.domElement.style.bottom = '0px';
+			this.stats.domElement.style.bottom = '10px';
 			this.stats.domElement.style.zIndex = 100;
 			container.appendChild( this.stats.domElement );
 		}

@@ -33,9 +33,9 @@ var materialArray = [ materialFront, materialSide ];</code></pre>
 
 <p>Then we instantiate a &quot;font loader&quot;. This is a widely used pattern in three.js. There are many types of loaders, but they have the same form, they take the name of the resource being loaded and one to three functions. </p>
 <ul>
-  <li><span class="inline-code">onLoad( font )</span> - Called when the resource has been loaded. The argument   is the actual JS object that has been loaded. </li>
-  <li><span class="inline-code">onProgress( xhr )</span> - Called (if the loading takes long enough) with a float (0..1)indicating load progress</li>
-  <li><span class="inline-code">onError( xhr )</span> - Called in case of error.</li>
+  <li><span class="inline-code">onLoad( font )</span> Called when the resource has been loaded. The argument   is the actual JS object that has been loaded </li>
+  <li><span class="inline-code">onProgress( xhr )</span> Called (if the loading takes long enough) with a float (0..1)indicating load progress</li>
+  <li><span class="inline-code">onError( xhr )</span> Called in case of error.</li>
 </ul>
 <p>In this demo, we don't bother with progress or error handling so we define only the first function.</p>
 <pre><code class="language-javascript">var loader = new THREE.FontLoader();
