@@ -1,14 +1,8 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops">
 <head>
-		<!--
-  			Roughly based (or inspired by) NeHe Tutorial 16  
-  			Original:  http://nehe.gamedev.net/tutorial/texture_mapped_outline_fonts/18001/
-  
-  			@author: rkwright@geofx.com
-		 -->
 		<title>NEHE Tutorial 16</title>
-		<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
 
 		<!-- Set the viewport size to the screen size, so it will be displayed maximized, but unscaled. -->
 		<meta name="viewport" content="width=768, height=1024"/>
@@ -17,7 +11,7 @@
 		<!-- Include several libraries from THREE.js and the Scene class  -->
 		<script src="../js/three.js" type="text/javascript"></script>
 		<script src="../js/Detector.js" type="text/javascript"></script>
-		<script src="../js/OrbitControls-Touch.js" type="text/javascript"></script>
+		<script src="../js/OrbitControls.js" type="text/javascript"></script>
 		<script src="../js/Stats.js" type="text/javascript"></script>
 		<script src="../js/gfx-scene.js" type="text/javascript"></script>
 	</head>
@@ -25,7 +19,7 @@
     <!-- Create a DIV element, which will be shown over the WebGL canvas. -->
     <div style="position: absolute; top: 10px; left: 10px;color:white">
         'r,g,b,w,k': Color of the fog<br/>
-        '+,-' intensity of the fog, if exponential
+        '+,-' intensity of the fog
     </div>
     <script type="text/javascript"> <![CDATA[
             var MAX_FOG = 0.5;
@@ -45,7 +39,6 @@
 				cameraPos:[2,2,10],
 				canvasWidth : 768,
 				canvasHeight : 1024,
-				axisHeight:10,
 				controls:true,
 				displayStats:true,
 				floorRepeat:10,
@@ -87,14 +80,17 @@
 					boxMesh.position.set(0.0, yTranslation, z);
 					gfxScene.add(boxMesh);
 				}
-				
-				document.addEventListener("keypress", onDocumentKeyPress, false);
+
+				debugger;
+				document.addEventListener("keydown", onDocumentKeyDown, false);
 			}
 	
-			function onDocumentKeyPress(event) {
+			function onDocumentKeyDown(event) {
+				debugger;
+
 				// Get the key code of the pressed key
 				var keyChar = String.fromCharCode(event.which);
-	
+
 				if (keyChar == '+') {
 					if (fogDensity < MAX_FOG )
 						fogDensity += FOG_INCR;
@@ -124,7 +120,11 @@
 				else if (keyChar == 'w') {
 					gfxScene.addFog( { fogColor: 0xffffff } );
 				}
+
+				// need to stop propagation of the event or the Reading System will probably take back the focus
+				//event.stopPropagation();
  			}
+
 			/**
 			 * Animate the scene and call rendering.
 			 */
