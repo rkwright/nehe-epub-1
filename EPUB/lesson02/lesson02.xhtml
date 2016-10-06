@@ -12,7 +12,7 @@
 <p>In the this second lesson, we'll cover pretty much all the source code.  In subsequent lessons we'll include only the sections that are new.</p>
 <p>The first line just tells the browser we are using HTML5.</p>
 <pre><code class="language-html">&lt;!DOCTYPE html&gt; </code> </pre>
-<p>This next line just declares the namespaces. Note that demos are written in the XML serialization of HTML5.  In EPUB 3.1 (under development now for publication late 2016) non-XML HTML5 will be allowed.</p>
+<p>This next line just declares the namespaces. Note that demos are written in the XML serialization of HTML5 as required by EPUB 3.1.</p>
 <pre><code class="language-html">&lt;html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops"&gt;</code></pre>
     
 <p> Next we explicitly declare the size of the viewport since we are packaging the page with the WebGL demo on it as pre-paginated.  It is done this way because the JavaScript code that is the demo has to have a specific size. Normally, in the browser the JS code fetches the sizee of the innerWindow, but that doesn't work from inside an EPUB reading system since it normally wraps the actual page content in an iFrame or other construct. So it works much better to specify a fixed size page.</p>
@@ -26,7 +26,7 @@ background-color: #000000;
 overflow: hidden;
 }</code></pre>
             
-<p>Next we include to JavaScript libraries: the core library for three.js and a utility library that checks that underlying web-browser engine supports WebGL.  This is almost unnecessary as of 2016 sincevirtually all browsers enable WebGL support by default. Still, doesn't hurt.</p>
+<p>Next we include to JavaScript libraries: the core library for three.js and a utility library that checks that underlying web-browser engine supports WebGL.  This is almost unnecessary as of 2016 since virtually all browsers enable WebGL support by default. Still, doesn't hurt.</p>
 <pre><code class="language-html">&lt;script src="../js/three.js"&gt;&lt;/script&gt;
 &lt;script src="../js/Detector.js"&gt;&lt;/script&gt;</code></pre>
         
@@ -61,7 +61,7 @@ renderScene();</code></pre>
 <pre><code class="language-javascript">renderer.setClearColor(0x000000, 1);
 renderer.setSize(canvasWidth, canvasHeight);</code></pre>
       
-<p>Get the DIV element from the HTML document by its ID and append the renderers DOM element to that div.  Then allocate the scene object, in which all objects are stored (e. g. camera, lights,
+<p>Get the <span class="inline-code">div</span> element from the HTML document by its ID and append the renderers DOM element to that <span class="inline-code">div</span>.  Then allocate the scene object, in which all objects are stored (<em>e. g.</em> camera, lights,
  geometries, ...).</p>
 
 <pre><code class="language-javascript">document.getElementById("WebGLCanvas").appendChild(renderer.domElement);
@@ -71,15 +71,14 @@ scene = new THREE.Scene();</code></pre>
 <ul>
   <li> PerspectiveCamera (perspective projection) </li>
   <li>OrthographicCamera (parallel projection)</li>
-  <li>CombinedCamera (allows to switch between perspective / parallel projection
+  <li>CombinedCamera (allows to switch between perspective / orthographic projection
     during runtime)
   </li>
 </ul>
-<p>In this example we create a perspective camera. Parameters for the perspective
+<p>In this example we create a perspective camera. (We'll cover use of the orthographic camera in a  lesson in volume 2). Parameters for the perspective
       camera are</p>
 <ul>
-  <li> field of view (FOV),
-    ..</li>
+  <li> field of view (FOV)</li>
   <li> aspect ratio (usually set to the quotient of canvas width to canvas height)</li>
   <li>near </li>
   <li>far</li>
