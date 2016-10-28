@@ -81,12 +81,10 @@
 					gfxScene.add(boxMesh);
 				}
 
-				debugger;
 				document.addEventListener("keydown", onDocumentKeyDown, false);
 			}
 	
 			function onDocumentKeyDown(event) {
-				debugger;
 
 				// Get the key code of the pressed key
 				var keyChar = String.fromCharCode(event.which);
@@ -122,7 +120,7 @@
 				}
 
 				// need to stop propagation of the event or the Reading System will probably take back the focus
-				//event.stopPropagation();
+				event.stopPropagation();
  			}
 
 			/**
