@@ -2,7 +2,7 @@
  *  @author rkwright   /  http://www.geofx.com
  */
 
-var GFX = { revision: '03' };
+var GFX = { revision: '04' };
 
 //some constants
 	var    	X_AXIS = 0;
@@ -69,7 +69,7 @@ GFX.Scene = function ( parameters ) {
 };
 
 // the scene's parameters from the values JSON object
-// lifted from MrDoob's implementation in three.three-js
+// lifted from MrDoob's implementation in three.js
 GFX.setParameters = function( object, values ) {
 
     if ( values === undefined ) return;
@@ -167,7 +167,7 @@ GFX.Scene.prototype = {
 			this.canvasHeight = container.clientHeight;
 		}
 	
-		// allocate the THREE.three-js renderer
+		// allocate the THREE.js renderer
 		this.renderer = new THREE.WebGLRenderer({antialias:true, alpha: this.alphaBuffer});
 		this.renderer.autoClear = this.autoClear;
 

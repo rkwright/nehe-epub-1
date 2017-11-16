@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops">
+<html xmlns="http://www.w3.org/1999/xhtml" >
 <head>
 		<title>NEHE Tutorial 16</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
@@ -36,7 +36,7 @@
             fogDensity : fogDensity,
             fogColor: 0xffffff });
 
-        var options = setupDatGUI();
+        setupDatGUI();
 
         // then initialize our demo's stuff
         initializeDemo();
@@ -88,7 +88,7 @@
             options.density = 0.1;
             options.color = 0xffffff;
 
-            gui = new dat.GUI();
+            var gui = new dat.GUI();
 
             gui.add(options, 'density', MIN_FOG, MAX_FOG).onChange(function() {
                 gfxScene.addFog( { fogDensity: options.density } );

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops">
+<html xmlns="http://www.w3.org/1999/xhtml" >
 	<head>
 		<title>Three.js tutorial - Lesson 04</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
@@ -32,16 +32,11 @@
 
 		<!-- This JavaScript block encloses the Three.three-js commands -->
 		<script>
-			// Global scene object
+			// Globals (ick)
 			var scene;
-
-			// Global camera object
 			var camera;
-
-			// Global mesh object of the triangle
+			var renderer;
 			var triangleMesh;
-
-			// Global mesh object of the square
 			var squareMesh;
 
 			// Initialize the scene
@@ -77,8 +72,8 @@
 				renderer.setClearColor(0x000000, 1);
 
 				// Set the size of the fixed page
-				canvasWidth = 768;
-				canvasHeight = 1024;
+				var canvasWidth = 768;
+				var canvasHeight = 1024;
 
 				// Set the renderers size to the content areas size
 				renderer.setSize(canvasWidth, canvasHeight);

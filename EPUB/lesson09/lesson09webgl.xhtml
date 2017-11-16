@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops">
+<html xmlns="http://www.w3.org/1999/xhtml" >
 <head>
 		<title>Three.js tutorial - Lesson 09</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
@@ -83,7 +83,7 @@
 
 					// note that the rgb color values must be in the range of 0..1 or the Color 
 					// object will just clamp them to 1, i.e. white
-					star[i] = new Object();
+					star[i] = [];
 					star[i].angle = 0.0;
 					star[i].dist  = (i / num) * 5.0;
 					star[i].r     = Math.random();
@@ -111,7 +111,7 @@
                     // make the stars spiral inward as they spin
 					star[i].angle += i / num;
 					star[i].dist  -= 0.01;
-					if(star[i].dist < 0.0) {
+					if (star[i].dist < 0.0) {
 						star[i].dist += 5.0;
 						
 						// note that the rgb color values must be in the range of 0..1 or the Color 

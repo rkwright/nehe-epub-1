@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops">
+<html xmlns="http://www.w3.org/1999/xhtml" >
 <head>
 		<title>Three.js tutorial - Lesson 08</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
@@ -102,7 +102,7 @@
             options.nFilter = 0;
             options.textureFilter = filterType[options.nFilter];
 
-            gui = new dat.GUI();
+            var gui = new dat.GUI();
 
             gui.add( options, 'rotating' ).onChange(function() {
                 if (options.rotating === false) {

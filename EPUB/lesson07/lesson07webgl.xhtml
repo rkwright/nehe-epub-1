@@ -37,7 +37,6 @@
     var scene;
     var camera;
     var renderer;
-    var gui;
 
     // Global mesh object of the cube
     var cubeMesh;
@@ -187,7 +186,7 @@
         options.nFilter = 0;
         options.textureFilter = filterType[options.nFilter];
 
-        gui = new dat.GUI();
+        var gui = new dat.GUI();
 
         gui.add( options, 'rotating' ).onChange(function() {
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops">
+<html xmlns="http://www.w3.org/1999/xhtml" >
 <head>
 		<title>NEHE Tutorial #11</title>
 		<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
@@ -28,10 +28,11 @@
 				controls:true,
 				displayStats:true });
 			
-			var wiggle_count = 0;		// Counter Used To Control How Fast Flag Waves
+			//var wiggle_count = 0;		// Counter Used To Control How Fast Flag Waves
 			var texture;
             var paraGeom;
             var paraMesh;
+            var material;
 
 			// then initialize our demo's stuff
 			initializeDemo();
@@ -72,7 +73,7 @@
 
             function wiggleTheSurface() {
 
-                vertices = paraGeom.vertices;
+                var vertices = paraGeom.vertices;
 
                 var temp = vertices[0].z;
                 for ( var i = 1; i < vertices.length; i++ ) {

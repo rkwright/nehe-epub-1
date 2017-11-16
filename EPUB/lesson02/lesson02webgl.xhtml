@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- The previous line tells the browser that the page uses the HTML5 standard. -->
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops">
+<html xmlns="http://www.w3.org/1999/xhtml" >
 	<head>
 		<title>Nehe -three.js - Lesson 02</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
@@ -36,10 +36,11 @@
 			// Global objects
 			var scene;
             var camera;
+            var renderer;
             var canvasHeight = 0;
             var canvasWidth  = 0;
 
-            getMetaViewportHeightandWidth()
+            getMetaViewportHeightandWidth();
 
 			// Initialize the scene
 			initializeScene();
@@ -52,7 +53,7 @@
                 var content = document.getElementById("meta-viewport").getAttribute("content");
                 var attrs = content.split(",");
                 var w=0,h=1;
-                if (attrs[0].indexOf("width") == -1) {
+                if (attrs[0].indexOf("width") === -1) {
                     w = [h, h = w][0];
                 }
 
