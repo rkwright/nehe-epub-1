@@ -2,7 +2,10 @@
  * @author rkwright   /  www.geofx.com
  */
  
- body {
+body {
+	margin:0;
+	padding:0;
+
 	/* Set the background color of the HTML page to black */
 	background-color: #000000;
 
@@ -10,6 +13,6 @@
 	overflow: hidden;
 
 	/* Define the font and the color for the usage, which is an ordinary HTML overlay. */
-	font-family: Monospace;
+    font-family: "Lucida Sans Typewriter", "Courier New", Courier, Monaco, monospace;
 	color: white;
 }
