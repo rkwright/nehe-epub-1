@@ -47,16 +47,19 @@
 
         // Global mesh object of the cube
         var cubeMesh;
-        var options = setupDatGUI();
 
         // allocate the Scene object, and set the camera position
         var gfxScene = new GFX.Scene( {
             cameraPos:[0,0,6],
             canvasWidth : 768,
-            canvasHeight : 1024 });
+            canvasHeight : 1024,
+			datgui:true
+        });
 
         var directionalLight = gfxScene.directionalLights[0];
         var ambientLight = gfxScene.ambientLights[0];
+
+        var options = setupDatGUI();
 
         initializeDemo();
 
@@ -102,9 +105,7 @@
             options.nFilter = 0;
             options.textureFilter = filterType[options.nFilter];
 
-            var gui = new dat.GUI();
-
-            gui.add( options, 'rotating' ).onChange(function() {
+            gfxScene.gui.add( options, 'rotating' ).onChange(function() {
                 if (options.rotating === false) {
                     xRotation = 0;
                     yRotation = 0;
@@ -112,7 +113,7 @@
                 }
             });
 
-            gui.add( options, 'blending' ).onChange(function() {
+            gfxScene.gui.add( options, 'blending' ).onChange(function() {
                 if (cubeMesh.material.depthWrite === false) {
                     cubeMesh.material.depthWrite = true;
                     cubeMesh.material.opacity = 1.0;
@@ -127,12 +128,12 @@
                 updateFilter();
             });
 
-            gui.add( options, 'light' ).onChange(function() {
+            gfxScene.gui.add( options, 'light' ).onChange(function() {
                 ambientLight.intensity = ambientLight.intensity > 0 ? 0 : 1;
                 directionalLight.intensity = directionalLight.intensity > 0 ? 0 : 1;
             });
 
-            gui.add(options, "textureFilter", [ filterType[0], filterType[1], filterType[2], filterType[3]  ]).onChange(function() {
+            gfxScene.gui.add(options, "textureFilter", [ filterType[0], filterType[1], filterType[2], filterType[3]  ]).onChange(function() {
 
                 options.nFilter = filterType.indexOf(options.textureFilter);
                 updateFilter();

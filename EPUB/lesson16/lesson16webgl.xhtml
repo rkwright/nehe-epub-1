@@ -25,12 +25,13 @@
 
         // allocate the Scene object, request orbitControls, some of 3D axes 10 units high and the stats
         var gfxScene = new GFX.Scene( {
-            cameraPos:[2,2,10],
+            cameraPos:[6,4,14],
             canvasWidth : 768,
         	canvasHeight : 1024,
             axisHeight:10,
             controls:true,
             displayStats:true,
+			datgui:true,
             floorRepeat:10,
             fogType : fogType,
             fogDensity : fogDensity,
@@ -88,13 +89,11 @@
             options.density = 0.1;
             options.color = 0xffffff;
 
-            var gui = new dat.GUI();
-
-            gui.add(options, 'density', MIN_FOG, MAX_FOG).onChange(function() {
+            gfxScene.gui.add(options, 'density', MIN_FOG, MAX_FOG).onChange(function() {
                 gfxScene.addFog( { fogDensity: options.density } );
             });
 
-            gui.addColor( options, 'color').onChange( function( color  ) {
+            gfxScene.gui.addColor( options, 'color').onChange( function( color  ) {
                 gfxScene.addFog( { fogColor: color } );
             });
 
